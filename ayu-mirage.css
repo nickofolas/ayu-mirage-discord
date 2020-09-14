@@ -23,9 +23,9 @@
     --header-secondary: #c9c9c9;
 
     /* Ayu theme-specific vars */
-    --ayu-positive: #bae67e;
-    --ayu-negative: #f28779;
-    --ayu-default: #5ccfe6;
+    --ayu-positive: #a6cc70;
+    --ayu-negative: #f27983;
+    --ayu-default: #77a8d9;
 
     --ayu-hover-animation-speed: 0.35s;
 
@@ -42,6 +42,10 @@
     --ayu-button-default: var(--ayu-default);
     --ayu-button-positive: var(--ayu-positive);
     --ayu-button-negative: var(--ayu-negative);
+
+    --ayu-presence-playing: var(--ayu-default);
+    --ayu-presence-spotify: var(--ayu-positive);
+    --ayu-presence-streaming: #a37acc;
 }
 
 /* SECTION: hljs syntax highlighting */
@@ -179,18 +183,42 @@
 
 /* SECTION: Buttons */
 
-button {
-    border-radius: 7.5px!important;
-}
-
-button[class*=lookFilled][class*=colorBrand] {
+.theme-dark button[class*=lookFilled][class*=colorBrand] {
     background-color: var(--ayu-button-default)!important;
 }
 
-button[class*=lookFilled][class*=colorGreen] {
+.theme-dark button[class*=lookFilled][class*=colorGreen] {
     background-color: var(--ayu-button-positive)!important;
 }
 
-button[class*=lookFilled][class*=colorRed] {
+.theme-dark button[class*=lookFilled][class*=colorRed] {
     background-color: var(--ayu-button-negative)!important;
 }
+
+/* END SECTION: Buttons */
+
+/* SECTION: Small user popout */
+
+.theme-dark [class*=headerSpotify] {
+    background-color: var(--ayu-presence-spotify)!important;
+}
+
+.theme-dark [class*=headerPlaying] {
+    background-color: var(--ayu-presence-playing)!important;
+}
+
+.theme-dark [class*=headerStreaming] {
+    background-color: var(--ayu-presence-streaming)!important;
+}
+
+.theme-dark [class*=headerSpotify] [class*=body],
+.theme-dark [class*=headerStreaming] [class*=body],
+.theme-dark [class*=headerPlaying] [class*=body] {
+    background-color: transparent!important;
+}
+
+.theme-dark [class*=userPopout] [class*=body],
+.theme-dark [class*=userPopout] [class*=footer] {
+    background-color: var(--background-floating);
+}
+
