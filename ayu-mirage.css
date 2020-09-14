@@ -1,0 +1,130 @@
+
+.theme-dark,
+.theme-light,
+:root {
+    /* TODO: Adjust all of these!!! */
+    --background-primary: #27293a !important;
+    --background-secondary: #202637 !important;
+    --background-secondary-alt: #403f56 !important;
+    --background-tertiary: #202637 !important;
+    --background-accent: #3f4966 !important;
+    --background-floating: #201e31 !important;
+    --background-modifier-hover: rgba(255,255,255,0.01) !important;
+    --background-modifier-active: rgba(255,255,255,0.03) !important;
+    --background-modifier-selected: rgba(255,255,255,0.04) !important;
+    --background-modifier-accent: hsla(0,0%,100%,0.06) !important;
+    --channeltextarea-background: var(--background-accent) !important;
+    --deprecated-card-bg: rgba(0, 0, 0, 0.2) !important;
+    --deprecated-card-editable-bg: rgba(0,0,0,0.1) !important;
+    --deprecated-text-input-bg: var(--background-tertiary) !important;
+    --deprecated-text-input-border: var(--background-floating) !important;
+    --deprecated-text-input-border-disabled: var(--background-tertiary) !important;
+    --activity-card-background: var(--background-primary) !important;
+    --channels-default: #9f9f9f !important;
+    --text-muted: #b6b6b6 !important;
+    --text-normal: #fbfbfb !important; 
+    --interactive-normal: #c8c8c8 !important;
+    --interactive-hover: #dcddde !important;
+    --interactive-active: #fff !important;
+    --interactive-muted: #747474 !important;
+    --header-primary: white !important;
+    --header-secondary: #c9c9c9 !important;
+    --toast-background: var(--background-primary) !important;
+    --toast-header: var(--background-tertiary) !important;
+    --toast-contents: var(--background-secondary) !important;
+    --toast-box-shadow: rgba(0, 0, 0, .2) !important;
+    --toast-border: var(--background-tertiary) !important;
+    --hover-animation-speed: 0.35s;
+    --seperator-color: var(--background-accent);
+
+}
+
+.chat-3bRxxu {
+    margin-left: 10px;
+}
+
+.scroller-2TZvBN {
+    background-color: var(--background-floating)!important;
+}
+
+.sidebar-2K8pFh {
+    transition-duration: var(--hover-animation-speed);
+    position:absolute;
+    z-index: 100!important;
+    height: 100%;
+}
+
+.sidebar-2K8pFh:not(:hover) {
+    margin-left: -220px;
+}
+
+.sidebar-2K8pFh:not(:hover) * {
+    color: transparent!important;
+}
+
+.sidebar-2K8pFh:not(:hover) .content-3at_AU {
+    background-color: transparent!important;
+}
+
+.container-2Rl01u {
+    background-color: var(--background-primary)!important;
+}
+
+.unread-3zKkbm {
+    position: absolute;
+    height: 32px;
+    width: 4px;
+    border-radius: 25px;
+    top: 4px;
+    right: 0%!important;
+    left: 98%;
+    margin-top: -4px;
+}
+
+.membersWrap-2h-GB4 {
+   min-width: unset;
+   width: 50px;
+   justify-content: right;
+}
+
+.members-1998pB {
+   transition: transform var(--hover-animation-speed);
+}
+
+.membersWrap-2h-GB4:hover .members-1998pB {
+   transform: translateX(-190px);
+}
+
+.membersWrap-2h-GB4 .membersGroup-v9BXpm::after {
+   content: '';
+   width: 30px;
+   height: 2px;
+   border-radius: 50px;
+   background: unset;
+   background-color: var(--seperator-color);
+   position: absolute;
+   left: -36px;
+   top: 29px;
+   margin-left: 0px;
+}
+
+.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe {
+   background-color: unset;
+   margin-left: 0px;
+   transition: margin-left var(--hover-animation-speed);
+}
+
+.membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe {
+   margin-left: 8px;
+}
+
+.membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
+   transform: translateX(-6px);
+}
+
+.membersWrap-2h-GB4 .membersGroup-v9BXpm {
+   cursor: default;
+   transform: translateX(45px);
+   transition: transform var(--hover-animation-speed);
+   overflow: visible;
+}
