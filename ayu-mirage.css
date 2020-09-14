@@ -1,5 +1,6 @@
 /* SECTION: root var declaration */
 .theme-dark {
+    /* DISCORD VARS */
     --background-primary: #1f2430;
     --background-secondary: #191e2a;
     --background-secondary-alt: #101521;
@@ -16,7 +17,19 @@
     --interactive-muted: #707a8c;
     --header-primary: white;
     --header-secondary: #c9c9c9;
-    --hover-animation-speed: 0.35s;
+
+    /* Theme-specific vars */
+    --ayu-hover-animation-speed: 0.35s;
+    
+    --ayu-hljs-string: #bbe67e;
+    --ayu-hljs-kw: #ffae57;
+    --ayu-hljs-title: #ffd57f;
+    --ayu-hljs-special: #d4bfff;
+    --ayu-hljs-attr: #5ccfe6;
+    --ayu-hljs-variable: #73d0ff;
+
+    --ayu-menu-red: #f28779;
+    --ayu-menu-default: #77a8d9;
 }
 
 /* SECTION: De-clutter chat viewport by hiding panels when not hovered */
@@ -29,7 +42,7 @@
 }
 
 .theme-dark .sidebar-2K8pFh {
-    transition-duration: var(--hover-animation-speed);
+    transition-duration: var(--ayu-hover-animation-speed);
     position:absolute;
     z-index: 100!important;
     height: 100%;
@@ -62,17 +75,17 @@
     margin-top: -4px;
 }
 
-.theme-dark .membersWrap-2h-GB4 {
-    transition-duration: var(--hover-animation-speed);
+.theme-dark [class*=membersWrap] {
+    transition-duration: var(--ayu-hover-animation-speed);
     right: 0;
     margin-right: -180px;
 }
 
-.theme-dark .membersWrap-2h-GB4:hover {
+.theme-dark [class*=membersWrap]:hover {
     transform: translateX(-190px);
 }
 
-.theme-dark .membersWrap-2h-GB4:not(:hover) .membersGroup-v9BXpm span {
+.theme-dark [class*=membersWrap]:not(:hover) [class*=membersGroup] span {
    background-color: var(--channels-default)!important; 
    width: 32px!important;
    color: transparent!important;
@@ -83,3 +96,63 @@
 }
 
 /* END SECTION: Declutter chat viewport */
+
+/* SECTION: hljs syntax highlighting */
+
+.theme-dark .hljs-doctag,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-number,
+.theme-dark .hljs-meta-string,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-string {
+    color: var(--ayu-hljs-string)!important;
+}
+
+.theme-dark .hljs-meta,
+.theme-dark .hljs-subst,
+.theme-dark .hljs-keyword {
+    color: var(--ayu-hljs-kw)!important;
+}
+
+.theme-dark .hljs-selector-class,
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-title {
+    color: var(--ayu-hljs-title)!important;
+}
+
+.theme-dark .hljs-built_in {
+    color: var(--ayu-hljs-special)!important;
+}
+
+.theme-dark .hljs-attribute {
+    color: var(--ayu-hljs-attr)!important;
+}
+
+.theme-dark .hljs-variable {
+    color: var(--ayu-hljs-variable)!important;
+}
+
+/* END SECTION: hljs customisation */
+
+/* SECTION: Menu highlighting */
+
+.theme-dark [class*=colorDanger]:not(:hover):not(:active) {
+    color: var(--ayu-menu-red)!important;
+    background-color: transparent!important;
+}
+
+.theme-dark [class*=colorDanger]:hover,
+.theme-dark [class*=colorDanger]:hover [class*=colorDefault],
+.theme-dark [class*=colorDanger]:active [class*=colorDefault],
+.theme-dark [class*=colorDanger]:active { 
+    background-color: var(--ayu-menu-red)!important;
+    border-color: var(--ayu-menu-red)!important;
+}
+
+.theme-dark [class*=colorDefault]:hover,
+.theme-dark [class*=colorDefault]:active, 
+.theme-dark [class*=colorDefault][class*=focused] {
+    background-color: var(--ayu-menu-default);
+}
+
+/* END SECTION: Menu highlighting */
