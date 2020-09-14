@@ -46,6 +46,11 @@
     --ayu-presence-playing: var(--ayu-default);
     --ayu-presence-spotify: var(--ayu-positive);
     --ayu-presence-streaming: #a37acc;
+
+    --ayu-border-radius: 7.5px;
+
+    --ayu-bot-tag-bg-colour: #5ccfe6;
+    --ayu-bot-tag-fg-colour: #101521;
 }
 
 /* SECTION: hljs syntax highlighting */
@@ -111,7 +116,7 @@
 /* SECTION: Misc. tweaks */
 
 /* blur email when not hovered */
-[class*=userSettingsAccount] div:nth-child(2)>div:nth-child(2)>[class*=viewBody]:not(:hover) {
+.theme-dark [class*=userSettingsAccount] div:nth-child(2)>div:nth-child(2)>[class*=viewBody]:not(:hover) {
     filter: blur(5px);
 }
 
@@ -148,7 +153,7 @@
     background-color: var(--background-primary)!important;
 }
 
-.theme-dark .unread-3zKkbm {
+.theme-dark [id~=channels] [class*=unread] {
     position: absolute;
     height: 32px;
     width: 4px;
@@ -179,9 +184,20 @@
     display: inline-block;
 }
 
+/* Bot tag customisation */
+.theme-dark [class*=botTag] {
+    background-color: var(--ayu-bot-tag-bg-colour);
+    color: var(--ayu-bot-tag-fg-colour);
+    border-radius: var(--ayu-border-radius);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
+
+.theme-dark button {
+    border-radius: var(--ayu-border-radius)!important;
+}
 
 .theme-dark button[class*=lookFilled][class*=colorBrand] {
     background-color: var(--ayu-button-default)!important;
@@ -211,8 +227,14 @@
     background-color: var(--ayu-presence-streaming)!important;
 }
 
+.theme-dark [class*=headerNormal] {
+    background-color: var(--background-secondary);
+}
+
 .theme-dark [class*=headerSpotify] [class*=body],
 .theme-dark [class*=headerStreaming] [class*=body],
+.theme-dark [class*=headerNormal] [class*=body],
+.theme-dark [class*=headerXbox] [class*=body],
 .theme-dark [class*=headerPlaying] [class*=body] {
     background-color: transparent!important;
 }
@@ -222,3 +244,51 @@
     background-color: var(--background-floating);
 }
 
+.theme-dark [class*=userPopout] [class^="role-"] {
+    height: auto;
+    border: none!important;
+    position: relative;
+    overflow: hidden;
+    padding: 3px;
+}
+
+.theme-dark [class*=userPopout] [class*=roleName] {
+    color: var(--text-normal);
+    font-weight: 550;
+    z-index: 5;
+}
+
+.theme-dark [class*=roleCircle] {
+    width: 16px;
+    height: 16px;
+}
+
+.theme-dark [class*=roleCircle]:hover {
+    cursor: pointer;
+}
+
+.theme-dark [class*=roleCircle]::after {
+    content: "";
+    height: 24px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    background: inherit;
+    opacity: 0.5;
+}
+
+/* END SECTION: User popouts */
+
+
+/* SECTION: Various info bars */
+
+.theme-dark [class*=messagesErrorBar] {
+    background-color: var(--ayu-negative)!important;
+}
+
+.theme-dark [class*=newMessagesBar] {
+    background-color: var(--ayu-default)!important;
+    opacity: 0.75;
+}
