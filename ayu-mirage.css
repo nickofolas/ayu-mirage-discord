@@ -124,11 +124,11 @@
 /* De-clutter chat viewport by hiding panels when not hovered */
 
 .theme-dark .chat-3bRxxu {
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .theme-dark .scroller-2TZvBN {
-    background-color: var(--background-floating)!important;
+    background-color: var(--background-secondary-alt)!important;
 }
 
 .theme-dark .sidebar-2K8pFh {
@@ -140,14 +140,19 @@
 
 .theme-dark .sidebar-2K8pFh:not(:hover) {
     margin-left: -220px;
+    height: 50%;
+    border-radius: var(--ayu-border-radius);
+    transform: translateY(50%);
 }
 
-.theme-dark .sidebar-2K8pFh:not(:hover) * {
-    color: transparent!important;
+.theme-dark .sidebar-2K8pFh:not(:hover) *  > [class*=header] {
+    display: none!important;
 }
 
-.theme-dark .sidebar-2K8pFh:not(:hover) .content-3at_AU {
-    background-color: transparent!important;
+.theme-dark .sidebar-2K8pFh:not(:hover) *:not(.unread-3zKkbm) {
+    border: none!important;
+    color: var(--background-secondary-alt)!important;
+    background-color: var(--background-secondary-alt);
 }
 
 .theme-dark .container-2Rl01u {
@@ -157,6 +162,7 @@
 .theme-dark [id~=channels] [class*=unread] {
     position: absolute;
     height: 32px;
+    z-index: 5!important;
     width: 4px;
     border-radius: 25px;
     top: 4px;
@@ -172,7 +178,7 @@
 }
 
 .theme-dark [class*=membersWrap]:hover {
-    transform: translateX(-190px);
+    transform: translateX(-180px);
 }
 
 .theme-dark [class*=membersWrap]:not(:hover) [class*=membersGroup] span {
@@ -298,30 +304,54 @@
 /* SECTION: All avatar stuff */
 
 /* Settings */
-[class*=avatarUploaderInner] {
+.theme-dark [class*=avatarUploaderInner] {
     border-radius: var(--ayu-border-radius)!important;
 }
 
 /* Member list avatars and typing dots */
-[role="img"][aria-label] foreignObject { mask: none; }
-[role="img"][aria-label] foreignObject img { border-radius: var(--ayu-border-radius); }
-[role="img"][aria-label] svg rect { display: none; }
+.theme-dark [role="img"][aria-label] foreignObject { mask: none; }
+.theme-dark [role="img"][aria-label] foreignObject img { border-radius: var(--ayu-border-radius); }
+.theme-dark [role="img"][aria-label] svg rect { display: none; }
 
-[class*=cursorDefault],
-[class*=dots] { overflow:visible; }
-[class*=dots] [cx="2.5"] {  cy: -8; cx: -8.5; color: var(--background-tertiary); }
-[class*=dots] [cx="8.75"] { cy: -8; cx: -2.25; color: var(--background-tertiary); }
-[class*=dots] [cx="15"] { cy: -8; cx: 4; color: var(--background-tertiary); }
+.theme-dark [class*=cursorDefault],
+.theme-dark [class*=dots] { overflow:visible; }
+.theme-dark [class*=dots] [cx="2.5"] {  cy: -8; cx: -8.5; color: var(--background-tertiary); }
+.theme-dark [class*=dots] [cx="8.75"] { cy: -8; cx: -2.25; color: var(--background-tertiary); }
+.theme-dark [class*=dots] [cx="15"] { cy: -8; cx: 4; color: var(--background-tertiary); }
 
 /* Avatar borders in chat */
-[id*=chat-messages] > div[class*=contents] > img {
+.theme-dark [id*=chat-messages] > div[class*=contents] > img {
     border-radius: var(--ayu-border-radius)!important;
 }
 
 /* userPopout hover mask */
-[class*=avatarHint] foreignObject {
+.theme-dark [class*=avatarHint] foreignObject {
     -webkit-mask: none!important;
     mask: none!important;
     border-radius: var(--ayu-border-radius)!important;
 }
 
+/* END SECTION: Avatars */
+
+/* SECTION: Server list */
+
+.theme-dark [data-ref-id="guildsnav"] [class*=blobContainer] foreignObject {
+    mask: none!important;
+    border-radius: var(--ayu-border-radius)!important;
+}
+
+/* END SECTION: Server list */
+
+/* SECTION: Large user popouts */
+
+[class*=topSectionPlaying] {
+    background-color: var(--ayu-default);
+}
+
+[class*=topSectionStreaming] {
+    background-color: var(--ayu-presence-streaming);
+}
+
+[class*=topSectionSpotify] {
+    background-color: var(--ayu-positive)
+}
