@@ -125,13 +125,8 @@
 
 /* De-clutter chat viewport by hiding panels when not hovered */
 
-.theme-dark .chat-3bRxxu {
-    padding-left: 10px;
-}
-
-.theme-dark .scroller-2TZvBN {
-    background-color: var(--background-secondary-alt)!important;
-}
+.theme-dark .chat-3bRxxu { padding-left: 10px; }
+.theme-dark .scroller-2TZvBN { background-color: var(--background-secondary-alt)!important; }
 
 .theme-dark .sidebar-2K8pFh {
     transition-duration: var(--ayu-hover-animation-speed);
@@ -179,9 +174,7 @@
     margin-right: -180px;
 }
 
-.theme-dark [class*=membersWrap]:hover {
-    transform: translateX(-180px);
-}
+.theme-dark [class*=membersWrap]:hover { transform: translateX(-180px); }
 
 .theme-dark [class*=membersWrap]:not(:hover) [class*=membersGroup] span {
     background-color: var(--channels-default)!important;
@@ -224,21 +217,10 @@
 
 /* SECTION: Small user popout */
 
-.theme-dark [class*=headerSpotify] {
-    background-color: var(--ayu-presence-spotify)!important;
-}
-
-.theme-dark [class*=headerPlaying] {
-    background-color: var(--ayu-presence-playing)!important;
-}
-
-.theme-dark [class*=headerStreaming] {
-    background-color: var(--ayu-presence-streaming)!important;
-}
-
-.theme-dark [class*=headerNormal] {
-    background-color: var(--background-secondary);
-}
+.theme-dark [class*=headerSpotify] { background-color: var(--ayu-presence-spotify)!important; }
+.theme-dark [class*=headerPlaying] { background-color: var(--ayu-presence-playing)!important; }
+.theme-dark [class*=headerStreaming] { background-color: var(--ayu-presence-streaming)!important; }
+.theme-dark [class*=headerNormal] { background-color: var(--background-secondary); }
 
 .theme-dark [class*=headerSpotify] [class*=body],
 .theme-dark [class*=headerStreaming] [class*=body],
@@ -272,9 +254,7 @@
     height: 16px;
 }
 
-.theme-dark [class*=roleCircle]:hover {
-    cursor: pointer;
-}
+.theme-dark [class*=roleCircle]:hover { cursor: pointer; }
 
 .theme-dark [class*=roleCircle]::after {
     content: "";
@@ -317,11 +297,11 @@
 
 .theme-dark [class*=cursorDefault],
 .theme-dark [class*=dots] { overflow:visible; }
-.theme-dark [class*=dots] [cx="2.5"] {  cy: -8; cx: -8.5; color: var(--background-tertiary); }
+.theme-dark [class*=dots] [cx="2.5"] { cy: -8; cx: -8.5; color: var(--background-tertiary); }
 .theme-dark [class*=dots] [cx="8.75"] { cy: -8; cx: -2.25; color: var(--background-tertiary); }
 .theme-dark [class*=dots] [cx="15"] { cy: -8; cx: 4; color: var(--background-tertiary); }
 
-[role="img"][aria-label]::before {
+.theme-dark [role="img"][aria-label]::before {
     content: "";
     position: absolute;
     top: 0;
@@ -333,21 +313,11 @@
 }
 
 /* Statuses as shadows */
-[role="img"][aria-label*="Online"]::before {
-  box-shadow: 0 0 0 2px var(--ayu-positive);
-}
-[role="img"][aria-label*="Do Not Disturb"]::before {
-  box-shadow: 0 0 0 2px var(--ayu-negative);
-}
-[role="img"][aria-label*="Idle"]::before {
-  box-shadow: 0 0 0 2px var(--ayu-hljs-title);
-}
-[role="img"][aria-label*="Streaming"]::before {
-  box-shadow: 0 0 0 2px var(--ayu-presence-streaming);
-}
-[role="img"][aria-label*="Offline"]::before {
-  box-shadow: 0 0 0 2px var(--background-primary);
-}
+.theme-dark [role="img"][aria-label*="Online"]::before { box-shadow: 0 0 0 2px var(--ayu-positive); }
+.theme-dark [role="img"][aria-label*="Do Not Disturb"]::before { box-shadow: 0 0 0 2px var(--ayu-negative); }
+.theme-dark [role="img"][aria-label*="Idle"]::before { box-shadow: 0 0 0 2px var(--ayu-hljs-title); }
+.theme-dark [role="img"][aria-label*="Streaming"]::before { box-shadow: 0 0 0 2px var(--ayu-presence-streaming); }
+.theme-dark [role="img"][aria-label*="Offline"]::before { box-shadow: 0 0 0 2px var(--background-primary); }
 
 /* Avatar borders in chat */
 .theme-dark [id*=chat-messages] > div[class*=contents] > img {
@@ -376,9 +346,7 @@
     border-radius: var(--ayu-border-radius)!important;
 }
 
-.theme-dark [class*=closedFolderIconWrapper] {
-    display: none;
-}
+.theme-dark [class*=closedFolderIconWrapper] { display: none; }
 
 /* END SECTION: Server list */
 
@@ -392,7 +360,7 @@
 
 /* SECTION: Friends list */
 
-[class*=userInfo] {
+.theme-dark [class*=userInfo] {
     overflow: unset;
     margin-left: 5px;
 }
