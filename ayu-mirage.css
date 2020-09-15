@@ -4,8 +4,7 @@
     --background-primary: #1f2430;
     --background-secondary: #191e2a;
     --background-secondary-alt: #101521;
-    --background-tertiary: #141925;
-    --background-accent: #33415e;
+    --background-tertiary: #141925; --background-accent: #33415e;
     --background-floating: #232834;
 
     --channeltextarea-background: var(--background-accent);
@@ -54,6 +53,9 @@
     --ayu-bot-tag-radius: 2.5px;
 
     --ayu-status-ring-radius: 10.5px;
+
+    --ayu-folder-icon: url(https://cdn.nickofolas.com/tEiGX.png);
+    /* Set this one to whatever, as long as it uses /assets/file-icon.png */
 }
 
 /* SECTION: hljs syntax highlighting */
@@ -297,6 +299,7 @@
 
 .theme-dark [class*=cursorDefault],
 .theme-dark [class*=dots] { overflow:visible; }
+
 .theme-dark [class*=dots] [cx="2.5"] { cy: -8; cx: -8.5; color: var(--background-tertiary); }
 .theme-dark [class*=dots] [cx="8.75"] { cy: -8; cx: -2.25; color: var(--background-tertiary); }
 .theme-dark [class*=dots] [cx="15"] { cy: -8; cx: 4; color: var(--background-tertiary); }
@@ -344,9 +347,29 @@
 
 .theme-dark [data-ref-id*="guildsnav"] [class*=wrapper] [class*=folder] {
     border-radius: var(--ayu-border-radius)!important;
+    background: var(--ayu-folder-icon);
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: none!important;
+}
+
+.theme-dark [data-ref-id*="guildsnav"] [class*=wrapper] [class*=folder]::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    content: ' ';
+}
+
+.theme-dark [data-ref-id*="guildsnav"] [class*=wrapper] [class*=folder] {
+    border-radius: var(--ayu-border-radius)!important;
 }
 
 .theme-dark [class*=closedFolderIconWrapper] { display: none; }
+.theme-dark [class*=expandedFolderIconWrapper] { display: none!important; }
 
 /* END SECTION: Server list */
 
@@ -363,4 +386,8 @@
 .theme-dark [class*=userInfo] {
     overflow: unset;
     margin-left: 5px;
+}
+
+.theme-dark .container-1D34oG {
+    background-color: var(--background-primary)!important;
 }
