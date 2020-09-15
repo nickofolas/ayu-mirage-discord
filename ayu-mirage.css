@@ -52,6 +52,8 @@
     --ayu-bot-tag-bg-colour: #5ccfe6;
     --ayu-bot-tag-fg-colour: #101521;
     --ayu-bot-tag-radius: 2.5px;
+
+    --ayu-status-ring-radius: 10.5px;
 }
 
 /* SECTION: hljs syntax highlighting */
@@ -319,6 +321,34 @@
 .theme-dark [class*=dots] [cx="8.75"] { cy: -8; cx: -2.25; color: var(--background-tertiary); }
 .theme-dark [class*=dots] [cx="15"] { cy: -8; cx: 4; color: var(--background-tertiary); }
 
+[role="img"][aria-label]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--ayu-status-ring-radius);
+    z-index: 20;
+}
+
+/* Statuses as shadows */
+[role="img"][aria-label*="Online"]::before {
+  box-shadow: 0 0 0 2px var(--ayu-positive);
+}
+[role="img"][aria-label*="Do Not Disturb"]::before {
+  box-shadow: 0 0 0 2px var(--ayu-negative);
+}
+[role="img"][aria-label*="Idle"]::before {
+  box-shadow: 0 0 0 2px var(--ayu-hljs-title);
+}
+[role="img"][aria-label*="Streaming"]::before {
+  box-shadow: 0 0 0 2px var(--ayu-presence-streaming);
+}
+[role="img"][aria-label*="Offline"]::before {
+  box-shadow: 0 0 0 2px var(--background-primary);
+}
+
 /* Avatar borders in chat */
 .theme-dark [id*=chat-messages] > div[class*=contents] > img {
     border-radius: var(--ayu-border-radius)!important;
@@ -335,23 +365,34 @@
 
 /* SECTION: Server list */
 
-.theme-dark [data-ref-id="guildsnav"] [class*=blobContainer] foreignObject {
+.theme-dark [class*=wrapper] [class*=svg] foreignObject,
+.theme-dark [data-ref-id*="guildsnav"] [class*=wrapper] foreignObject,
+.theme-dark [data-ref-id*="guildsnav"] [class*=blobContainer] foreignObject {
     mask: none!important;
     border-radius: var(--ayu-border-radius)!important;
+}
+
+.theme-dark [data-ref-id*="guildsnav"] [class*=wrapper] [class*=folder] {
+    border-radius: var(--ayu-border-radius)!important;
+}
+
+.theme-dark [class*=closedFolderIconWrapper] {
+    display: none;
 }
 
 /* END SECTION: Server list */
 
 /* SECTION: Large user popouts */
 
-[class*=topSectionPlaying] {
-    background-color: var(--ayu-default);
-}
+.theme-dark [class*=topSectionPlaying] { background-color: var(--ayu-default); }
+.theme-dark [class*=topSectionStreaming] { background-color: var(--ayu-presence-streaming); }
+.theme-dark [class*=topSectionSpotify] { background-color: var(--ayu-positive); }
 
-[class*=topSectionStreaming] {
-    background-color: var(--ayu-presence-streaming);
-}
+/* END SECTION: Large user popouts */
 
-[class*=topSectionSpotify] {
-    background-color: var(--ayu-positive)
+/* SECTION: Friends list */
+
+[class*=userInfo] {
+    overflow: unset;
+    margin-left: 5px;
 }
