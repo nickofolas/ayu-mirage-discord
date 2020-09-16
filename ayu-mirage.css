@@ -26,7 +26,7 @@
     --ayu-negative: #f27983;
     --ayu-default: #77a8d9;
 
-    --ayu-hover-animation-speed: 0.35s;
+    --ayu-hover-animation-speed: 0.25s;
 
     --ayu-hljs-string: #bbe67e;
     --ayu-hljs-kw: #ffae57;
@@ -79,17 +79,9 @@
     color: var(--ayu-hljs-title)!important;
 }
 
-.theme-dark .hljs-built_in {
-    color: var(--ayu-hljs-special)!important;
-}
-
-.theme-dark .hljs-attribute {
-    color: var(--ayu-hljs-attr)!important;
-}
-
-.theme-dark .hljs-variable {
-    color: var(--ayu-hljs-variable)!important;
-}
+.theme-dark .hljs-built_in { color: var(--ayu-hljs-special)!important; }
+.theme-dark .hljs-attribute { color: var(--ayu-hljs-attr)!important; }
+.theme-dark .hljs-variable { color: var(--ayu-hljs-variable)!important; }
 
 /* END SECTION: hljs customisation */
 
@@ -217,6 +209,8 @@
 }
 
 /* Emoji hovering */
+.theme-dark [class*=card][class*=bannedUser]::before,
+.theme-dark [class*=card][class*=InviteRow]::before,
 .theme-dark [class*=card][class*=emojiRow]::before {
     background-color: var(--background-secondary)!important;
     border: none!important;
@@ -238,14 +232,24 @@
 .theme-dark [class*=bottomControls] [class*=wrapper] [class*=Button] foreignObject { mask: none!important; }
 .theme-dark [class*=bottomControls] [class*=colorable][class*=primaryDark] { background-color: var(--background-accent); }
 
+/* Emoji picker */
+.theme-dark [class*=emojiPicker] [class*=categorySection] [class*=wrapper] {
+    background-color: var(--background-secondary);
+}
+
+/* Go Live window */
+.theme-dark [role=dialog] [class*=modalSize][class*=root],
+.theme-dark [class*=segmentContainer] [class*=segmentControl] {
+    background-color: var(--background-floating);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
 
-.theme-dark button {
-    border-radius: var(--ayu-border-radius)!important;
-}
+.theme-dark button { border-radius: var(--ayu-border-radius)!important; }
 
+.theme-dark [aria-label=Home][class*=wrapper][class*=selected] [class*=childWrapper],
 .theme-dark [class*=radioGroup] [class*=cardPrimaryEditable][style*="rgb(114, 137, 218)"],
 .theme-dark [class*=valueChecked],
 .theme-dark button[class*=lookFilled][class*=colorBrand] {
@@ -286,7 +290,7 @@
 
 .theme-dark [class*=userPopout] [class*=body],
 .theme-dark [class*=userPopout] [class*=footer] {
-    background-color: var(--background-floating);
+    background-color: var(--background-floating)!important;
 }
 
 .theme-dark [class*=userPopout] [class^="role-"] {
@@ -454,9 +458,8 @@
     margin-left: 5px;
 }
 
-.theme-dark [class*=peopleColumn] {
-    background-color: var(--background-primary)!important;
-}
+.theme-dark [class*=peopleColumn] { background-color: var(--background-primary)!important; }
+.theme-dark [aria-label="Add Friend"][class*=item][role=button] { background-color: var(--ayu-positive)!important; }
 
 /* END SECTION: Friends list */
 
@@ -480,8 +483,6 @@
 
 /* SECTION: Server Discovery page */
 
-.theme-dark [class*=pageWrapper] {
-    background-color: var(--background-primary)!important;
-}
+.theme-dark [class*=pageWrapper] { background-color: var(--background-primary)!important; }
 
 /* END SECTION: Server Discovery page */
