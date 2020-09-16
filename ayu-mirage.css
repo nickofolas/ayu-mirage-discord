@@ -233,8 +233,9 @@
 .theme-dark [class*=bottomControls] [class*=colorable][class*=primaryDark] { background-color: var(--background-accent); }
 
 /* Emoji picker */
+.theme-dark [id*=emoji-grid][class*=emojiPicker],
 .theme-dark [class*=emojiPicker] [class*=categorySection] [class*=wrapper] {
-    background-color: var(--background-secondary);
+    background-color: var(--background-floating);
 }
 
 /* Go Live window */
@@ -460,6 +461,16 @@
 
 .theme-dark [class*=peopleColumn] { background-color: var(--background-primary)!important; }
 .theme-dark [aria-label="Add Friend"][class*=item][role=button] { background-color: var(--ayu-positive)!important; }
+
+.theme-dark [class*=itemCard][class*=interactive]:hover,
+.theme-dark [class*=itemCard][class*=interactive] [class*=inset] section[class*=section] {
+    background-color: var(--background-tertiary);
+}
+
+.theme-dark [role=dialog] [class*=scroller][class*=scrollerBase],
+.theme-dark [role=dialog] [class*=vertical][class*=directionColumn] {
+    background-color: var(--background-floating)!important;
+}
 
 /* END SECTION: Friends list */
 
