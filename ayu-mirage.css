@@ -54,6 +54,8 @@
 
     --ayu-folder-icon: url(https://cdn.nickofolas.com/tEiGX.png);
     /* Set this one to whatever, as long as it uses /assets/file-icon.png */
+
+    --ayu-embed-right-radius: 15px;
 }
 
 /* SECTION: hljs syntax highlighting */
@@ -242,6 +244,16 @@
 .theme-dark [role=dialog] [class*=modalSize][class*=root],
 .theme-dark [class*=segmentContainer] [class*=segmentControl] {
     background-color: var(--background-floating);
+}
+
+/* Embeds */
+.theme-dark [class*=embed][class*=markup] {
+    border-left-width: 5px;
+    border-radius:
+        var(--ayu-border-radius)
+        var(--ayu-embed-right-radius)
+        var(--ayu-embed-right-radius)
+        var(--ayu-border-radius);
 }
 
 /* END SECTION: Misc. tweaks */
