@@ -175,7 +175,7 @@
 .theme-dark [class*=membersWrap]:hover { transform: translateX(-180px); }
 
 .theme-dark [class*=membersWrap]:not(:hover) [class*=membersGroup] span {
-    background-color: var(--channels-default)!important;
+    background-color: var(--background-accent)!important;
     width: 32px!important;
     color: transparent!important;
     border-radius: 25%;
@@ -246,6 +246,10 @@
     background-color: var(--background-floating);
 }
 
+.theme-dark [class*=formNotice],
+.theme-dark [class*=notDetected],
+.theme-dark [class*=userSettingsVoice] [class*=previewOverlay] { background-color: var(--background-floating)!important; }
+
 /* Embeds */
 .theme-dark [class*=embed][class*=markup] {
     border-left-width: 5px;
@@ -256,12 +260,17 @@
         var(--ayu-border-radius);
 }
 
+.theme-dark [class*=codeRedemptionRedirect] { background-color: var(--background-floating)!important; }
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
 
 .theme-dark button { border-radius: var(--ayu-border-radius)!important; }
 
+.theme-dark div[class*=bar] { background-color: var(--background-floating)!important; }
+
+.theme-dark div[class*=barFill],
 .theme-dark [aria-label=Home][class*=wrapper][class*=selected] [class*=childWrapper],
 .theme-dark [class*=radioGroup] [class*=cardPrimaryEditable][style*="rgb(114, 137, 218)"],
 .theme-dark [class*=valueChecked],
@@ -453,6 +462,8 @@
 .theme-dark [class*=circleIconButton] { color: var(--ayu-positive); }
 .theme-dark [class*=circleIconButton][class*=selected],
 .theme-dark [class*=circleIconButton]:hover { background-color: var(--ayu-positive)!important; color: white!important; }
+.theme-dark [class*=guildSeparator] { background-color: var(--background-accent)!important; }
+.theme-dark [aria-label=Home] [class*=childWrapper] { background-color: var(--background-accent)!important; }
 
 /* END SECTION: Server list */
 
