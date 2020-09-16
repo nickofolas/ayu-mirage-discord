@@ -216,12 +216,23 @@
     border: none!important;
 }
 
+/* Emoji hovering */
+.theme-dark [class*=card][class*=emojiRow]::before {
+    background-color: var(--background-secondary)!important;
+    border: none!important;
+}
+.theme-dark input[class*=emojiInput] { background-color: var(--background-secondary-alt)!important; }
+
 /* Roles adding menu */
 .theme-dark [role=dialog][aria-label="Add Role"] [class*=header] { background-color: var(--background-secondary)!important; }
 .theme-dark [role=dialog][aria-label="Add Role"] [class*=sectionTag] { background-color: var(--background-floating)!important; }
 
 /* Audit log filters */
 .theme-dark [class*=FilterPopout] { background-color: var(--background-floating)!important; }
+
+/* Search thingy */
+.theme-dark [id*=search-results][class*=container] { background-color: var(--background-floating)!important; }
+.theme-dark [id*=search-results][class*=option]::after { background: none!important; }
 
 /* END SECTION: Misc. tweaks */
 
@@ -232,11 +243,12 @@
 }
 
 .theme-dark [class*=radioGroup] [class*=cardPrimaryEditable][style*="rgb(114, 137, 218)"],
-.theme-dark [class*=titleChecked],
 .theme-dark [class*=valueChecked],
 .theme-dark button[class*=lookFilled][class*=colorBrand] {
     background-color: var(--ayu-button-default)!important;
 }
+
+.theme-dark [class*=valueUnchecked] { background-color: var(--background-accent)!important; }
 
 .theme-dark button[class*=lookFilled][class*=colorGreen] {
     background-color: var(--ayu-button-positive)!important;
