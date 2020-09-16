@@ -153,7 +153,7 @@
 .theme-dark .sidebar-2K8pFh:not(:hover) *:not(.unread-3zKkbm) {
     border: none!important;
     color: var(--background-secondary-alt)!important;
-    background-color: var(--background-secondary-alt);
+    background-color: var(--background-secondary-alt)!important;
 }
 
 .theme-dark .container-2Rl01u {
@@ -233,6 +233,10 @@
 /* Search thingy */
 .theme-dark [id*=search-results][class*=container] { background-color: var(--background-floating)!important; }
 .theme-dark [id*=search-results][class*=option]::after { background: none!important; }
+
+/* Stream controls and stuff */
+.theme-dark [class*=bottomControls] [class*=wrapper] [class*=Button] foreignObject { mask: none!important; }
+.theme-dark [class*=bottomControls] [class*=colorable][class*=primaryDark] { background-color: var(--background-accent); }
 
 /* END SECTION: Misc. tweaks */
 
