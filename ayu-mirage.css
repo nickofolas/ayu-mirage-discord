@@ -243,6 +243,9 @@
     background-color: var(--background-floating);
 }
 
+/* Quick switcher */
+.theme-dark [class*=quickswitcher] > [class*=input] { background-color: var(--background-secondary-alt)!important; }
+
 .theme-dark [class*=formNotice],
 .theme-dark [class*=notDetected],
 .theme-dark [class*=userSettingsVoice] [class*=previewOverlay] { background-color: var(--background-floating)!important; }
@@ -492,6 +495,11 @@
 
 /* SECTION: Modals */
 
+.theme-dark [class*=uploadModal],
+.theme-dark [class*=uploadModal] > [class*=inner] { 
+    background-color: var(--background-floating)!important;
+}
+
 .theme-dark [role=dialog] [class*=content][class*=thin][class*=scrollerBase],
 .theme-dark [role=dialog] [class*=header][class*=horizontal] { background-color: var(--background-floating)!important; }
 .theme-dark [role=dialog] [class*=footer] { background-color: var(--background-secondary); }
@@ -513,3 +521,8 @@
 .theme-dark [class*=pageWrapper] { background-color: var(--background-primary)!important; }
 
 /* END SECTION: Server Discovery page */
+
+/* SECTION: Emoji and mention suggestions */
+
+.theme-dark [class*=autocomplete] { background-color: var(--background-floating)!important; }
+.theme-dark [class*=autocompleteRow] [class*=selectorSelected] { background-color: var(--background-secondary)!important; }
