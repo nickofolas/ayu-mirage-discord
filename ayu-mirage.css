@@ -206,6 +206,23 @@
     border-radius: var(--ayu-border-radius)!important;
 }
 
+/* Server boost page */
+.theme-dark [class*=tiers] [class*=tier] [class*=tierBody] { background-color: var(--background-floating)!important; }
+.theme-dark [class*=tiers] [class*=tier] [class*=tierHeaderLocked] { background-color: var(--background-secondary)!important; }
+
+/* Members settings page */
+.theme-dark [class*=card][class*=member]::before {
+    background-color: var(--background-secondary)!important;
+    border: none!important;
+}
+
+/* Roles adding menu */
+.theme-dark [role=dialog][aria-label="Add Role"] [class*=header] { background-color: var(--background-secondary)!important; }
+.theme-dark [role=dialog][aria-label="Add Role"] [class*=sectionTag] { background-color: var(--background-floating)!important; }
+
+/* Audit log filters */
+.theme-dark [class*=FilterPopout] { background-color: var(--background-floating)!important; }
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
@@ -227,6 +244,11 @@
 
 .theme-dark button[class*=lookFilled][class*=colorRed] {
     background-color: var(--ayu-button-negative)!important;
+}
+
+.theme-dark button[class*=lookFilled][class*=colorGrey],
+.theme-dark button[class*=lookFilled][class*=colorPrimary] {
+    background-color: var(--background-accent)!important;
 }
 
 /* END SECTION: Buttons */
@@ -272,7 +294,7 @@
 
 .theme-dark [class*=roleCircle]:hover { cursor: pointer; }
 
-.theme-dark [class*=roleCircle]::after {
+.theme-dark [class*=userPopout] [class*=roleCircle]::after {
     content: "";
     height: 24px;
     width: 100%;
@@ -434,6 +456,9 @@
 .theme-dark [role=dialog] [class*=modal] [class*=thin][class*=scroller] { background-color: var(--background-secondary); }
 
 .theme-dark [class*=menu] { background-color: var(--background-primary)!important; }
+
+.theme-dark [class*=focusLock] [class*=modalContents],
+.theme-dark [class*=focusLock] [class*=main][class*=root][class*=small][class*=fullscreenOnMobile] { background-color: var(--background-floating); }
 
 /* END SECTION: Modals */
 
