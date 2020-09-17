@@ -222,6 +222,7 @@
 .theme-dark [class*=FilterPopout] > [class*=scroller] > [class*=selected] { background-color: var(--ayu-default)!important; }
 
 /* Search thingy */
+.theme-dark [id*=search-results] [class*=queryContainer][class*=focused],
 .theme-dark [id*=search-results][class*=container] { background-color: var(--background-floating)!important; }
 .theme-dark [id*=search-results][class*=option]::after { background: none!important; }
 
@@ -259,6 +260,9 @@
 }
 
 .theme-dark [class*=codeRedemptionRedirect] { background-color: var(--background-floating)!important; }
+
+/* Little keyboard button things */
+.theme-dark [class*=keybindShortcut] span { background-color: var(--background-accent)!important; }
 
 /* END SECTION: Misc. tweaks */
 
@@ -496,11 +500,9 @@
 
 /* SECTION: Modals */
 
+.theme-dark [class*=keyboardShortcutsModal],
 .theme-dark [class*=uploadModal],
-.theme-dark [class*=uploadModal] > [class*=inner] {
-    background-color: var(--background-floating)!important;
-}
-
+.theme-dark [class*=uploadModal] > [class*=inner],
 .theme-dark [role=dialog] [class*=content][class*=thin][class*=scrollerBase],
 .theme-dark [role=dialog] [class*=header][class*=horizontal] { background-color: var(--background-floating)!important; }
 .theme-dark [role=dialog] [class*=footer] { background-color: var(--background-secondary); }
