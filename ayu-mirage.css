@@ -1,6 +1,6 @@
 /* SECTION: root var declaration */
 .theme-dark {
-    /* DISCORD VARS */
+    /* Discord vars */
     --background-primary: #1f2430;
     --background-secondary: #191e2a;
     --background-secondary-alt: #101521;
@@ -56,6 +56,8 @@
     /* Set this one to whatever, as long as it uses /assets/file-icon.png */
 
     --ayu-embed-right-radius: 15px;
+
+    --ayu-icon-badge-radius: 4.5px;
 }
 
 /* SECTION: hljs syntax highlighting */
@@ -195,10 +197,6 @@
     background: var(--background-secondary-alt)!important;
     border-radius: var(--ayu-border-radius)!important;
 }
-
-/* Server boost page */
-.theme-dark [class*=tiers] [class*=tier] [class*=tierBody] { background-color: var(--background-floating)!important; }
-.theme-dark [class*=tiers] [class*=tier] [class*=tierHeaderLocked] { background-color: var(--background-secondary)!important; }
 
 /* Members settings page */
 .theme-dark [class*=card][class*=member]::before {
@@ -447,6 +445,9 @@
     content: ' ';
 }
 
+.theme-dark [class*=numberBadge],
+.theme-dark [class*=iconBadge] { border-radius: var(--ayu-icon-badge-radius)!important; }
+
 .theme-dark [data-ref-id*="guildsnav"] [class*=wrapper] [class*=folder] {
     border-radius: var(--ayu-border-radius)!important;
 }
@@ -496,7 +497,7 @@
 /* SECTION: Modals */
 
 .theme-dark [class*=uploadModal],
-.theme-dark [class*=uploadModal] > [class*=inner] { 
+.theme-dark [class*=uploadModal] > [class*=inner] {
     background-color: var(--background-floating)!important;
 }
 
@@ -526,3 +527,14 @@
 
 .theme-dark [class*=autocomplete] { background-color: var(--background-floating)!important; }
 .theme-dark [class*=autocompleteRow] [class*=selectorSelected] { background-color: var(--background-secondary)!important; }
+
+/* END SECTION: Suggestions */
+
+/* SECTION: Nitro Boost Page */
+
+.theme-dark [class*=perksModal] { background-color: var(--background-primary)!important; }
+.theme-dark [class*=perksModal] [class*=tierMarkerContainer] [class*=tierMarkerBackground],
+.theme-dark [class*=perksModal] [class^=perks] > [class^=perk] { background-color: var(--background-floating)!important; }
+
+.theme-dark [class*=tierBody] { background-color: var(--background-floating)!important; }
+.theme-dark [class*=tierHeaderLocked] { background-color: var(--background-secondary)!important; }
