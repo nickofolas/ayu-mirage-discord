@@ -368,11 +368,16 @@
 /* SECTION: All avatar stuff */
 
 /* Settings */
-.theme-dark [class*=avatarUploaderInner] {
+.theme-dark [class*=avatarUploaderInner],
+.theme-dark [id*=chat-messages] > div[class*=contents] > img,
+.theme-dark [class*=voiceAvatar],
+.theme-dark [class*=speaking],
+.theme-dark [role=dialog] [class*=message] [class*=avatar] {
     border-radius: var(--ayu-border-radius)!important;
 }
 
 /* Member list avatars and typing dots */
+.theme-dark [class*=callAvatarMask] foreignObject,
 .theme-dark [role="img"][aria-label] foreignObject { mask: none; }
 .theme-dark [role="img"][aria-label] foreignObject img { border-radius: var(--ayu-border-radius); }
 .theme-dark [role="img"][aria-label] svg rect { display: none; }
@@ -401,21 +406,12 @@
 .theme-dark [role="img"][aria-label*="Idle"]::before { box-shadow: inset 0 0 0 1.5px var(--ayu-hljs-title); }
 .theme-dark [role="img"][aria-label*="Streaming"]::before { box-shadow: inset 0 0 0 1.5px var(--ayu-presence-streaming); }
 .theme-dark [role="img"][aria-label*="Offline"]::before { box-shadow: inset 0 0 0 1.5px var(--background-primary); }
-
-/* Avatar borders in chat */
-.theme-dark [id*=chat-messages] > div[class*=contents] > img {
-    border-radius: var(--ayu-border-radius)!important;
 }
 
 /* userPopout hover mask */
 .theme-dark [class*=avatarHint] foreignObject {
     -webkit-mask: none!important;
     mask: none!important;
-    border-radius: var(--ayu-border-radius)!important;
-}
-
-/* Message delete modals */
-.theme-dark [role=dialog] [class*=message] [class*=avatar] {
     border-radius: var(--ayu-border-radius)!important;
 }
 
