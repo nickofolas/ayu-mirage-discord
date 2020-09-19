@@ -26,7 +26,7 @@
     --ayu-negative: #f27983;
     --ayu-default: #77a8d9;
 
-    --ayu-hover-animation-speed: 0.25s;
+    --ayu-transition-duration: 0.25s;
 
     --ayu-hljs-string: #bbe67e;
     --ayu-hljs-kw: #ffae57;
@@ -128,7 +128,7 @@
 .theme-dark .chat-3bRxxu { padding-left: 10px; }
 .theme-dark .scroller-2TZvBN { background-color: var(--background-secondary-alt)!important; }
 .theme-dark .sidebar-2K8pFh {
-    transition-duration: var(--ayu-hover-animation-speed);
+    transition-duration: var(--ayu-transition-duration);
     position:absolute;
     z-index: 100!important;
     height: 100%;
@@ -165,21 +165,30 @@
 }
 
 .theme-dark [class*=membersWrap] {
-    transition-duration: var(--ayu-hover-animation-speed);
+    transition-duration: var(--ayu-transition-duration);
     right: 0;
     margin-right: -180px;
 }
 
 .theme-dark [class*=membersWrap]:hover { transform: translateX(-180px); }
 
-.theme-dark [class*=membersWrap]:not(:hover) [class*=membersGroup] span {
-    background-color: var(--background-accent)!important;
+.theme-dark [class*=membersGroup] {
+    height: unset;
+    padding: 0;
+    padding-top: 10px;
+    margin-left: 7%;
+}
+
+.theme-dark [class*=membersWrap]:not(:hover) [class*=membersGroup] {
     width: 32px!important;
+    padding: 0;
+    margin-left: 7%;
     color: transparent!important;
     border-radius: 25%;
     height: 2px;
-    margin-top: 7px;
+    margin-top: 21px;
     display: inline-block;
+    background-color: var(--background-accent)!important;
 }
 
 /* Bot tag customisation */
