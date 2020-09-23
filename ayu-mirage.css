@@ -118,7 +118,7 @@
 
 /* SECTION: Misc. tweaks */
 
-/* blur email when not hovered */
+/* Blur email when not hovered */
 .theme-dark [class*=userSettingsAccount] div:nth-child(2) > div:nth-child(2) > [class*=viewBody]:not(:hover) {
     filter: blur(5px);
 }
