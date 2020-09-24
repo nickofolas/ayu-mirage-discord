@@ -1,1 +1,65 @@
-@import url('https://nickofolas.github.io/ayu-mirage-discord/ayu-mirage.css');
+@import url('https://nickofolas.github.io/ayu-mirage-discord/ayu-base.css');
+
+/* Uncomment any of these lines to enable them */
+/* @import url(https://nickofolas.github.io/ayu-mirage-discord/extensions/declutter.css); */
+
+.theme-dark {
+    /* Discord vars */
+    --background-primary: #1f2430;
+    --background-secondary: #191e2a;
+    --background-secondary-alt: #101521;
+    --background-tertiary: #141925; --background-accent: #33415e;
+    --background-floating: #232834;
+
+    --channeltextarea-background: var(--background-accent);
+    --channels-default: #cbccc6;
+
+    --text-muted: #707a8c;
+    --text-normal: #cbccc6;
+
+    --interactive-normal: #cbccc6;
+    --interactive-hover: #cbccc6;
+    --interactive-active: #fff;
+    --interactive-muted: #707a8c;
+
+    --header-primary: white;
+    --header-secondary: #c9c9c9;
+
+    /* Ayu theme-specific vars */
+    --ayu-positive: #a6cc70;
+    --ayu-negative: #f27983;
+    --ayu-default: #77a8d9;
+
+    --ayu-transition-duration: 0.25s;
+
+    --ayu-hljs-string: #bbe67e;
+    --ayu-hljs-kw: #ffae57;
+    --ayu-hljs-title: #ffd57f;
+    --ayu-hljs-special: #d4bfff;
+    --ayu-hljs-attr: #5ccfe6;
+    --ayu-hljs-variable: #73d0ff;
+
+    --ayu-menu-red: var(--ayu-negative);
+    --ayu-menu-default: var(--ayu-default);
+
+    --ayu-button-default: var(--ayu-default);
+    --ayu-button-positive: var(--ayu-positive);
+    --ayu-button-negative: var(--ayu-negative);
+
+    --ayu-presence-playing: var(--ayu-default);
+    --ayu-presence-spotify: var(--ayu-positive);
+    --ayu-presence-streaming: #a37acc;
+
+    --ayu-border-radius: 7.5px;
+
+    --ayu-bot-tag-bg-colour: #5ccfe6;
+    --ayu-bot-tag-fg-colour: #101521;
+    --ayu-bot-tag-radius: 2.5px;
+
+    --ayu-folder-icon: url(https://i.imgur.com/xobmZ2W.png);
+    /* Set this one to whatever, as long as it uses /assets/file-icon.png */
+
+    --ayu-embed-right-radius: 15px;
+
+    --ayu-icon-badge-radius: 4.5px;
+}

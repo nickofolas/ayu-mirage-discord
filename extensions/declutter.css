@@ -1,0 +1,67 @@
+/* Hides side panels in main chat viewport to de-clutter */
+
+.theme-dark .chat-3bRxxu { padding-left: 10px; }
+.theme-dark .scroller-2TZvBN { background-color: var(--background-secondary-alt)!important; }
+.theme-dark .sidebar-2K8pFh {
+    transition-duration: var(--ayu-transition-duration);
+    position:absolute;
+    z-index: 100!important;
+    height: 100%;
+}
+
+.theme-dark .sidebar-2K8pFh:not(:hover) {
+    margin-left: -220px;
+    height: 50%;
+    border-radius: var(--ayu-border-radius);
+    transform: translateY(50%);
+    background-color: var(--background-secondary-alt)!important;
+}
+
+.theme-dark .sidebar-2K8pFh:not(:hover) *  > [class*=header] { display: none!important; }
+.theme-dark .sidebar-2K8pFh:not(:hover) * {
+    border: none!important;
+    margin-right: 5000px;
+}
+
+.theme-dark .container-2Rl01u {
+    background-color: var(--background-primary)!important;
+}
+
+.theme-dark [id^=channels] [class*=unread] {
+    position: absolute;
+    height: 32px;
+    z-index: 5!important;
+    width: 4px;
+    border-radius: 25px;
+    top: 4px;
+    right: 0%!important;
+    left: 98%;
+    margin-top: -4px;
+}
+
+.theme-dark [class*=membersWrap] {
+    transition-duration: var(--ayu-transition-duration);
+    right: 0;
+    margin-right: -180px;
+}
+
+.theme-dark [class*=membersWrap]:hover { transform: translateX(-180px); }
+
+.theme-dark [class*=membersGroup] {
+    height: unset;
+    padding: 0;
+    padding-top: 10px;
+    margin-left: 7%;
+}
+
+.theme-dark [class*=membersWrap]:not(:hover) [class*=membersGroup] {
+    width: 32px!important;
+    padding: 0;
+    margin-left: 7%;
+    color: transparent!important;
+    border-radius: 25%;
+    height: 2px;
+    margin-top: 21px;
+    display: inline-block;
+    background-color: var(--background-accent)!important;
+}
