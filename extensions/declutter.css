@@ -27,18 +27,6 @@
     background-color: var(--background-primary)!important;
 }
 
-.theme-dark [id^=channels] [class*=unread] {
-    position: absolute;
-    height: 32px;
-    z-index: 5!important;
-    width: 4px;
-    border-radius: 25px;
-    top: 4px;
-    right: 0%!important;
-    left: 98%;
-    margin-top: -4px;
-}
-
 .theme-dark [class*=membersWrap] {
     transition-duration: var(--ayu-transition-duration);
     right: 0;
