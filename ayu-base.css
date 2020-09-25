@@ -419,7 +419,7 @@
 /* SECTION: Emoji and mention suggestions */
 
 .theme-dark [class*=autocomplete] { background-color: var(--background-floating)!important; }
-.theme-dark [class*=selected] { background-color: var(--background-secondary)!important; }
+.theme-dark [class*=autocomplete] [class*=selected] { background-color: var(--background-secondary)!important; }
 
 /* END SECTION: Suggestions */
 
