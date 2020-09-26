@@ -1,7 +1,9 @@
 @import url('https://nickofolas.github.io/ayu-mirage-discord/ayu-base.css');
 
 /* Uncomment any of these lines to enable them */
-/*  @import url(https://nickofolas.github.io/ayu-mirage-discord/extensions/declutter.css); */
+
+/* Chat declutter-er */
+/* @import url(https://nickofolas.github.io/ayu-mirage-discord/extensions/declutter.css); */
 
 .theme-dark {
     /* Discord vars */
