@@ -5,6 +5,7 @@
 /* Chat declutter-er */
 /* @import url(https://nickofolas.github.io/ayu-mirage-discord/extensions/declutter.css); */
 
+/* Declares variables used within the theme and all */
 .theme-dark {
     /* Discord vars */
     --background-primary: #1f2430;
