@@ -125,7 +125,7 @@
 /* Emoji picker */
 .theme-dark [id*=emoji-grid][class*=emojiPicker],
 .theme-dark [class*=emojiPicker] [class*=categorySection] [class*=wrapper] {
-    background-color: var(--background-floating);
+    background-color: var(--background-secondary);
 }
 
 /* Go Live window */
