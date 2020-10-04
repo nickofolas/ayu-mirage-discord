@@ -53,6 +53,12 @@
     --ayu-presence-spotify: var(--ayu-positive);
     --ayu-presence-streaming: #a37acc;
 
+    --ayu-status-online: var(--ayu-positive);
+    --ayu-status-dnd: var(--ayu-negative);
+    --ayu-status-idle: var(--ayu-hljs-title);
+    --ayu-status-streaming: var(--ayu-presence-streaming);
+    --ayu-status-offline: var(--background-primary);
+
     --ayu-border-radius: 7.5px;
 
     --ayu-bot-tag-bg-colour: #5ccfe6;
