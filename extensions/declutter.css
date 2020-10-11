@@ -1,5 +1,7 @@
 /* Hides side panels in main chat viewport to de-clutter */
 
+/* If using this alone, change var(--ayu-transition-duration) to a numerical value */
+
 .theme-dark .chat-3bRxxu { padding-left: 10px; }
 .theme-dark .scroller-2TZvBN { background-color: var(--background-secondary-alt)!important; }
 .theme-dark .sidebar-2K8pFh {
