@@ -308,6 +308,20 @@
     border-radius: var(--ayu-border-radius)!important;
 }
 
+/* Selection for member list */
+.theme-dark [class*=members] > [class*=content] > [class*=member] {
+    max-width: unset!important;
+}
+
+.theme-dark [class*=clickable]:hover [class*=layout],
+.theme-dark [class*=selected][class*=member] [class*=layout] {
+    right: 0!important;
+    padding-right: 0!important;
+    border-radius: 0!important;
+    border-right: 2px solid var(--ayu-default)!important;
+    background-image: linear-gradient(to left, var(--background-secondary-alt), var(--background-secondary));
+}
+
 /* END SECTION: Avatars */
 
 /* SECTION: Server list */
@@ -432,3 +446,25 @@
 .theme-dark [class*=tierHeaderLocked] { background-color: var(--background-secondary)!important; }
 
 /* END SECTION: Nitro Boost Page */
+
+/* SECTION: Channels List */
+
+.theme-dark [class*=wrapper][class*=iconVisibility][role=listitem] > [class*=content] {
+    border-left: 2px solid transparent;
+    border-radius: 0!important;
+    margin-left: 0!important;
+}
+
+.theme-dark [class*=modeSelected] > [class*=content] {
+    border-left: 2px solid var(--ayu-default)!important;
+    background-image: linear-gradient(to right, var(--background-secondary-alt), var(--background-secondary));
+}
+
+.theme-dark #channels > [class*=containerDefault] > [class*=wrapper] > [class*=content]:hover,
+.theme-dark #channels [class*=containerDefault] [class*=wrapper]:hover > [class*=content],
+.theme-dark #channels [class*=containerDefault] [class*=wrapper]:active > [class*=content] {
+    border-left: 2px solid var(--background-secondary-alt);
+    background-image: linear-gradient(to right, var(--background-secondary-alt), var(--background-secondary));
+}
+
+/* END SECTION: Channels List */
