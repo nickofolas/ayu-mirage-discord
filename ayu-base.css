@@ -308,20 +308,6 @@
     border-radius: var(--ayu-border-radius)!important;
 }
 
-/* Selection for member list */
-.theme-dark [class*=members] > [class*=content] > [class*=member] {
-    max-width: unset!important;
-}
-
-.theme-dark [class*=clickable]:hover [class*=layout],
-.theme-dark [class*=selected][class*=member] [class*=layout] {
-    right: 0!important;
-    padding-right: 0!important;
-    border-radius: 0!important;
-    border-right: 2px solid var(--ayu-default)!important;
-    background-image: linear-gradient(to left, var(--background-secondary-alt), var(--background-secondary));
-}
-
 /* END SECTION: Avatars */
 
 /* SECTION: Server list */
@@ -447,24 +433,48 @@
 
 /* END SECTION: Nitro Boost Page */
 
-/* SECTION: Channels List */
+/* SECTION: List selections */
 
-.theme-dark [class*=wrapper][class*=iconVisibility][role=listitem] > [class*=content] {
+[id^=channels]::-webkit-scrollbar,
+[id^=members]::-webkit-scrollbar {
+    display:none;
+}
+
+.theme-dark [class*=member]:hover [class*=layout] {
+    border-radius: calc(var(--ayu-border-radius) / 2)!important;
+    border-right: 2px solid var(--background-secondary)!important;
+}
+
+.theme-dark [class*=selected][class*=member] [class*=layout] {
+    border-right: 2px solid var(--ayu-default)!important;
+    border-radius: calc(var(--ayu-border-radius) / 2)!important;
+    background-image: linear-gradient(to left, var(--background-secondary-alt), var(--background-secondary));
+}
+
+.theme-dark [class*=wrapper][class*=iconVisibility][role=listitem] > [class*=content],
+.theme-dark aside div[class*=side] div[class*=role],
+.theme-dark nav[class*=sidebar] > div[class*=side] > [class*=item][class*=themed] {
     border-left: 2px solid transparent;
-    border-radius: 0!important;
+    border-radius: calc(var(--ayu-border-radius) / 2)!important;
     margin-left: 0!important;
 }
 
-.theme-dark [class*=modeSelected] > [class*=content] {
+.theme-dark [class*=modeSelected] > [class*=content],
+.theme-dark aside div[class*=side] div[class*=selected][class*=themed][class*=role],
+.theme-dark nav[class*=sidebar] > div[class*=side] > [class*=item][class*=themed][class*=selected] {
     border-left: 2px solid var(--ayu-default)!important;
     background-image: linear-gradient(to right, var(--background-secondary-alt), var(--background-secondary));
 }
 
 .theme-dark #channels > [class*=containerDefault] > [class*=wrapper] > [class*=content]:hover,
 .theme-dark #channels [class*=containerDefault] [class*=wrapper]:hover > [class*=content],
-.theme-dark #channels [class*=containerDefault] [class*=wrapper]:active > [class*=content] {
+.theme-dark #channels [class*=containerDefault] [class*=wrapper]:active > [class*=content],
+.theme-dark aside div[class*=side] div[class*=role]:hover,
+.theme-dark aside div[class*=side] div[class*=role]:active,
+.theme-dark nav[class*=sidebar] > div[class*=side] > [class*=item][class*=themed]:hover,
+.theme-dark nav[class*=sidebar] > div[class*=side] > [class*=item][class*=themed]:active {
     border-left: 2px solid var(--background-secondary-alt);
     background-image: linear-gradient(to right, var(--background-secondary-alt), var(--background-secondary));
 }
 
-/* END SECTION: Channels List */
+/* END SECTION: List Selections */
