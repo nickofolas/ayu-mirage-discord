@@ -1,4 +1,4 @@
-@import url('https://nickofolas.github.io/ayu-mirage-discord/ayu-base.css');
+@import url("https://nickofolas.github.io/ayu-mirage-discord/ayu-base.css");
 
 /* Uncomment any of these lines to enable them */
 
@@ -11,7 +11,8 @@
     --background-primary: #1f2430;
     --background-secondary: #191e2a;
     --background-secondary-alt: #101521;
-    --background-tertiary: #141925; --background-accent: #33415e;
+    --background-tertiary: #141925;
+    --background-accent: #33415e;
     --background-floating: #232834;
 
     --channeltextarea-background: var(--background-accent);
