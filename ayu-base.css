@@ -602,24 +602,8 @@
 
 /* SECTION: List selections */
 
-[id^="channels"]::-webkit-scrollbar,
-[id^="members"]::-webkit-scrollbar {
+[id^="channels"]::-webkit-scrollbar {
     display: none;
-}
-
-.theme-dark [class*="member"]:hover [class*="layout"] {
-    border-radius: calc(var(--ayu-border-radius) / 2) !important;
-    border-right: 2px solid var(--background-secondary) !important;
-}
-
-.theme-dark [class*="selected"][class*="member"] [class*="layout"] {
-    border-right: 2px solid var(--ayu-default) !important;
-    border-radius: calc(var(--ayu-border-radius) / 2) !important;
-    background-image: linear-gradient(
-        to left,
-        var(--background-secondary-alt),
-        var(--background-secondary)
-    );
 }
 
 .theme-dark
