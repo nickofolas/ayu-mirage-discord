@@ -320,7 +320,7 @@
     border-radius: var(--ayu-border-radius)!important;
 }
 
-.theme-dark [data-ref-id*="guildsnav"] [class*=wrapper] [class*=folder] {
+.theme-dark [class*=folderIconWrapper] {
     border-radius: var(--ayu-border-radius)!important;
     background: var(--ayu-folder-icon);
     background-size: 24px;
@@ -329,7 +329,7 @@
     transition: none!important;
 }
 
-.theme-dark [data-ref-id*="guildsnav"] [class*=wrapper] [class*=folder]::before {
+.theme-dark [class*=folderIconWrapper]::before {
     position: absolute;
     top: 0;
     right: 0;
