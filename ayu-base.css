@@ -384,19 +384,27 @@
 }
 
 /* Statuses as shadows */
+.theme-dark [role="img"][aria-label*="オンライン"]::before,
 .theme-dark [role="img"][aria-label*="Online"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-online);
 }
+.theme-dark [role="img"][aria-label*="取り込み中"]::before,
 .theme-dark [role="img"][aria-label*="Do Not Disturb"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-dnd);
 }
+.theme-dark [role="img"][aria-label*="退席中"]::before,
 .theme-dark [role="img"][aria-label*="Idle"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-idle);
 }
+.theme-dark [role="img"][aria-label*="配信"]::before,
 .theme-dark [role="img"][aria-label*="Streaming"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-streaming);
 }
-.theme-dark [role="img"][aria-label*="Offline"]::before {
+
+.theme-dark [role="img"][aria-label*="オフライン"]::before,
+.theme-dark [role="img"][aria-label*="オンライン状態を隠す"]::before,
+.theme-dark [role="img"][aria-label*="Offline"]::before,
+.theme-dark [role="img"][aria-label*="Invisible"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-offline);
 }
 
