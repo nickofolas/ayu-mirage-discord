@@ -344,6 +344,7 @@
 
 /* Settings */
 .theme-dark [class^="avatar"],
+.theme-dark [class^="partyAvatar"],
 .theme-dark [role="img"][aria-label] foreignObject img,
 .theme-dark [class*="avatarUploaderInner"],
 .theme-dark [id*="chat-messages"] > div[class*="contents"] > img,
@@ -495,11 +496,11 @@
 }
 
 .theme-dark [class*="tooltipBlack"] {
-    background-color: var(--background-floating) !important;
+    background-color: var(--background-tertiary) !important;
 }
 
 .theme-dark [class*="tooltipBlack"] [class*="tooltipPointer"] {
-    border-top-color: var(--background-floating) !important;
+    border-top-color: var(--background-tertiary) !important;
 }
 
 /* END SECTION: Server list */
