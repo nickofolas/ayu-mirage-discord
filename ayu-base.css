@@ -83,6 +83,19 @@
     filter: blur(5px);
 }
 
+/* Mic Test thing */
+.theme-dark [class*="micTest"] [class*="container"] {
+    border-radius: var(--ayu-border-radius) !important;
+}
+
+.theme-dark [class*="micTest"] [class*="container"] [class*="notches"] {
+    display: none;
+}
+
+.theme-dark [class*="micTest"] [class*="container"] [class*="progress"] {
+    background-color: var(--background-secondary) !important;
+}
+
 /* Bot tag customisation */
 .theme-dark [class*="botTag"] {
     background-color: var(--ayu-bot-tag-bg-colour);
@@ -330,6 +343,8 @@
 /* SECTION: All avatar stuff */
 
 /* Settings */
+.theme-dark img[class*="avatar"],
+.theme-dark [role="img"][aria-label] foreignObject img,
 .theme-dark [class*="avatarUploaderInner"],
 .theme-dark [id*="chat-messages"] > div[class*="contents"] > img,
 .theme-dark [class*="voiceAvatar"],
@@ -340,12 +355,10 @@
 
 /* Member list avatars and typing dots */
 .theme-dark [class*="callAvatarMask"] foreignObject,
-.theme-dark [role="img"][aria-label] foreignObject {
+.theme-dark [role="img"][aria-label] foreignObject,
+.theme-dark foreignObject[mask*="url(#svg-mask-voice-user-summary-item)"] {
     -webkit-mask: none !important;
     mask: none !important;
-}
-.theme-dark [role="img"][aria-label] foreignObject img {
-    border-radius: var(--ayu-border-radius);
 }
 .theme-dark [role="img"][aria-label] svg rect {
     display: none;
@@ -479,6 +492,14 @@
 }
 .theme-dark [aria-label="Home"] [class*="childWrapper"] {
     background-color: var(--background-accent) !important;
+}
+
+.theme-dark [class*="tooltipBlack"] {
+    background-color: var(--background-floating) !important;
+}
+
+.theme-dark [class*="tooltipBlack"] [class*="tooltipPointer"] {
+    border-top-color: var(--background-floating) !important;
 }
 
 /* END SECTION: Server list */
