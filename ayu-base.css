@@ -343,7 +343,7 @@
 /* SECTION: All avatar stuff */
 
 /* Settings */
-.theme-dark img[class*="avatar"],
+.theme-dark [class^="avatar"],
 .theme-dark [role="img"][aria-label] foreignObject img,
 .theme-dark [class*="avatarUploaderInner"],
 .theme-dark [id*="chat-messages"] > div[class*="contents"] > img,
