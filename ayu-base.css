@@ -1,15 +1,18 @@
 /* SECTION: hljs syntax highlighting */
+.theme-dark [class^="codeBlockLang"],
 .theme-dark .hljs-doctag,
 .theme-dark .hljs-literal,
 .theme-dark .hljs-number,
 .theme-dark .hljs-meta-string,
 .theme-dark .hljs-regexp,
-.theme-dark .hljs-string {
+.theme-dark .hljs-string,
+.theme-dark .hljs-addition {
     color: var(--ayu-hljs-string) !important;
 }
 
 .theme-dark .hljs-meta,
 .theme-dark .hljs-subst,
+.theme-dark .hljs-attr,
 .theme-dark .hljs-keyword {
     color: var(--ayu-hljs-kw) !important;
 }
@@ -23,11 +26,16 @@
 .theme-dark .hljs-built_in {
     color: var(--ayu-hljs-special) !important;
 }
+.theme-dark .hljs-section,
 .theme-dark .hljs-attribute {
     color: var(--ayu-hljs-attr) !important;
 }
 .theme-dark .hljs-variable {
     color: var(--ayu-hljs-variable) !important;
+}
+
+.theme-dark .hljs-deletion {
+    color: var(--ayu-negative) !important;
 }
 
 /* END SECTION: hljs customisation */
@@ -629,74 +637,3 @@
 }
 
 /* END SECTION: Nitro Boost Page */
-
-/* SECTION: List selections */
-
-[id^="channels"]::-webkit-scrollbar {
-    display: none;
-}
-
-.theme-dark
-    [class*="wrapper"][class*="iconVisibility"][role="listitem"]
-    > [class*="content"],
-.theme-dark aside div[class*="side"] div[class*="role"],
-.theme-dark
-    nav[class*="sidebar"]
-    > div[class*="side"]
-    > [class*="item"][class*="themed"] {
-    border-left: 2px solid transparent;
-    border-radius: calc(var(--ayu-border-radius) / 2) !important;
-    margin-left: 0 !important;
-}
-
-.theme-dark [class*="modeSelected"] > [class*="content"],
-.theme-dark
-    aside
-    div[class*="side"]
-    div[class*="selected"][class*="themed"][class*="role"],
-.theme-dark
-    nav[class*="sidebar"]
-    > div[class*="side"]
-    > [class*="item"][class*="themed"][class*="selected"] {
-    border-left: 2px solid var(--ayu-default) !important;
-    background-image: linear-gradient(
-        to right,
-        var(--background-secondary-alt),
-        var(--background-secondary)
-    );
-}
-
-.theme-dark
-    #channels
-    > [class*="containerDefault"]
-    > [class*="wrapper"]
-    > [class*="content"]:hover,
-.theme-dark
-    #channels
-    [class*="containerDefault"]
-    [class*="wrapper"]:hover
-    > [class*="content"],
-.theme-dark
-    #channels
-    [class*="containerDefault"]
-    [class*="wrapper"]:active
-    > [class*="content"],
-.theme-dark aside div[class*="side"] div[class*="role"]:hover,
-.theme-dark aside div[class*="side"] div[class*="role"]:active,
-.theme-dark
-    nav[class*="sidebar"]
-    > div[class*="side"]
-    > [class*="item"][class*="themed"]:hover,
-.theme-dark
-    nav[class*="sidebar"]
-    > div[class*="side"]
-    > [class*="item"][class*="themed"]:active {
-    border-left: 2px solid var(--background-secondary-alt);
-    background-image: linear-gradient(
-        to right,
-        var(--background-secondary-alt),
-        var(--background-secondary)
-    );
-}
-
-/* END SECTION: List Selections */
