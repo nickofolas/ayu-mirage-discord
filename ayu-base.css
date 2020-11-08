@@ -144,6 +144,7 @@
 }
 
 /* Emoji hovering */
+.theme-dark [class*="card"][class*="game"]::before,
 .theme-dark [class*="card"][class*="bannedUser"]::before,
 .theme-dark [class*="card"][class*="InviteRow"]::before,
 .theme-dark [class*="card"][class*="emojiRow"]::before {
@@ -277,6 +278,13 @@
 .theme-dark button[class*="lookFilled"][class*="colorGrey"],
 .theme-dark button[class*="lookFilled"][class*="colorPrimary"] {
     background-color: var(--background-accent) !important;
+}
+
+.theme-dark
+    [class*="notificationSettings"]
+    label:not([class*="disabled"]):hover,
+.theme-dark [class*="notificationSettings"] label[class*="selected"] {
+    background-color: var(--ayu-default) !important;
 }
 
 /* END SECTION: Buttons */
@@ -568,6 +576,7 @@
 
 /* SECTION: Modals */
 
+.theme-dark [class*="addGamePopout"],
 .theme-dark [class*="keyboardShortcutsModal"],
 .theme-dark [class*="uploadModal"],
 .theme-dark [class*="uploadModal"] > [class*="inner"],
