@@ -5,9 +5,12 @@
 /* Chat declutter-er */
 /* @import url(https://nickofolas.github.io/ayu-mirage-discord/extensions/declutter.css); */
 
+/* Border Radius-es (Square Icons etc) */
+/* @import url(https://nickofolas.github.io/ayu-mirage-discord/extensions/borders.css); */
+
 /* Declares variables used within the theme and all */
-.theme-dark,
-.theme-light {
+.theme-light,
+.theme-dark {
     /* Discord vars */
     --background-primary: #1f2430;
     --background-secondary: #191e2a;
@@ -21,6 +24,7 @@
 
     --text-muted: #707a8c;
     --text-normal: #cbccc6;
+    --text-link: #00b0f4;
 
     --interactive-normal: #cbccc6;
     --interactive-hover: #cbccc6;
@@ -73,4 +77,7 @@
     --ayu-embed-right-radius: 15px;
 
     --ayu-icon-badge-radius: 4.5px;
+
+    --scrollbar-auto-thumb: var(--background-secondary);
+    --scrollbar-auto-track: var(--background-primary);
 }

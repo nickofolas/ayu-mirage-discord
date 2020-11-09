@@ -1,4 +1,8 @@
-.theme-light::before {
+/*
+Theme base, generally just does colour stuff.
+*/
+
+html.theme-light::before {
     content: "This theme is made to be used with Discord's dark theme. Please switch to that for the best experience.";
     font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: var(--ayu-negative);
@@ -82,24 +86,15 @@
 
 /* Unread indicators */
 .theme-dark [id^="channels"] [class*="unread"] {
-    position: absolute;
-    height: 32px;
     z-index: 5 !important;
-    width: 4px;
-    border-radius: 25px;
-    top: 4px;
     right: 0% !important;
-    left: 98%;
+    border-radius: 25px;
+    position: absolute;
     margin-top: -4px;
-}
-
-/* Blur email when not hovered */
-.theme-dark
-    [class*="userSettingsAccount"]
-    div:nth-child(2)
-    > div:nth-child(2)
-    > [class*="viewBody"]:not(:hover) {
-    filter: blur(5px);
+    height: 32px;
+    width: 4px;
+    left: 98%;
+    top: 4px;
 }
 
 /* Mic Test thing */
@@ -122,28 +117,8 @@
     border-radius: var(--ayu-bot-tag-radius);
 }
 
-/* Scrollbars */
-.theme-dark ::-webkit-scrollbar {
-    width: 8px !important;
-}
-.theme-dark ::-webkit-scrollbar-track {
-    background: none !important;
-}
-.theme-dark ::-webkit-scrollbar-track-piece {
-    background: none !important;
-}
-.theme-dark ::-webkit-scrollbar-thumb {
-    background: var(--background-secondary-alt) !important;
-    border-radius: var(--ayu-border-radius) !important;
-}
-
-/* Members settings page */
-.theme-dark [class*="card"][class*="member"]::before {
-    background-color: var(--background-secondary) !important;
-    border: none !important;
-}
-
-/* Emoji hovering */
+/* Settings hovering */
+.theme-dark [class*="card"][class*="member"]::before,
 .theme-dark [class*="card"][class*="game"]::before,
 .theme-dark [class*="card"][class*="bannedUser"]::before,
 .theme-dark [class*="card"][class*="InviteRow"]::before,
@@ -186,24 +161,8 @@
 /* Stream controls and stuff */
 .theme-dark
     [class*="bottomControls"]
-    [class*="wrapper"]
-    [class*="Button"]
-    foreignObject {
-    mask: none !important;
-}
-.theme-dark
-    [class*="bottomControls"]
     [class*="colorable"][class*="primaryDark"] {
     background-color: var(--background-accent);
-}
-
-/* Emoji picker */
-.theme-dark [id*="emoji-grid"][class*="emojiPicker"],
-.theme-dark
-    [class*="emojiPicker"]
-    [class*="categorySection"]
-    [class*="wrapper"] {
-    background-color: var(--background-secondary);
 }
 
 /* Go Live window */
@@ -219,17 +178,7 @@
 
 .theme-dark [class*="formNotice"],
 .theme-dark [class*="notDetected"],
-.theme-dark [class*="userSettingsVoice"] [class*="previewOverlay"] {
-    background-color: var(--background-floating) !important;
-}
-
-/* Embeds */
-.theme-dark [class*="embed"][class*="markup"] {
-    border-left-width: 5px;
-    border-radius: var(--ayu-border-radius) var(--ayu-embed-right-radius)
-        var(--ayu-embed-right-radius) var(--ayu-border-radius);
-}
-
+.theme-dark [class*="userSettingsVoice"] [class*="previewOverlay"],
 .theme-dark [class*="codeRedemptionRedirect"] {
     background-color: var(--background-floating) !important;
 }
@@ -242,10 +191,6 @@
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
-
-.theme-dark button {
-    border-radius: var(--ayu-border-radius) !important;
-}
 
 .theme-dark [class*="slider"] > div[class*="bar"] {
     background-color: var(--background-floating) !important;
@@ -304,52 +249,13 @@
     background-color: var(--background-secondary);
 }
 
-.theme-dark [class*="headerSpotify"] [class*="body"],
-.theme-dark [class*="headerStreaming"] [class*="body"],
-.theme-dark [class*="headerNormal"] [class*="body"],
-.theme-dark [class*="headerXbox"] [class*="body"],
-.theme-dark [class*="headerPlaying"] [class*="body"] {
+.theme-dark [class^="header"] [class*="body"] {
     background-color: transparent !important;
 }
 
 .theme-dark [class*="userPopout"] > [class*="body"],
 .theme-dark [class*="userPopout"] [class*="footer"] {
     background-color: var(--background-floating) !important;
-}
-
-.theme-dark [class*="userPopout"] [class^="role-"] {
-    height: auto;
-    border: none !important;
-    position: relative;
-    overflow: hidden;
-    padding: 3px;
-}
-
-.theme-dark [class*="userPopout"] [class*="roleName"] {
-    color: var(--text-normal);
-    font-weight: 550;
-    z-index: 5;
-}
-
-.theme-dark [class*="roleCircle"] {
-    width: 16px;
-    height: 16px;
-}
-
-.theme-dark [class*="roleCircle"]:hover {
-    cursor: pointer;
-}
-
-.theme-dark [class*="userPopout"] [class*="roleCircle"]::after {
-    content: "";
-    height: 24px;
-    width: 100%;
-    left: 0;
-    top: 50%;
-    position: absolute;
-    transform: translateY(-50%);
-    background: inherit;
-    opacity: 0.5;
 }
 
 /* END SECTION: User popouts */
@@ -367,145 +273,7 @@
 
 /* END SECTION: bars */
 
-/* SECTION: All avatar stuff */
-
-/* Settings */
-.theme-dark [class^="avatar"],
-.theme-dark [class^="partyAvatar"],
-.theme-dark [role="img"][aria-label] foreignObject img,
-.theme-dark [class*="avatarUploaderInner"],
-.theme-dark [id*="chat-messages"] > div[class*="contents"] > img,
-.theme-dark [class*="voiceAvatar"],
-.theme-dark [class*="speaking"],
-.theme-dark [role="dialog"] [class*="message"] [class*="avatar"] {
-    border-radius: var(--ayu-border-radius) !important;
-}
-
-/* Member list avatars and typing dots */
-.theme-dark [class*="callAvatarMask"] foreignObject,
-.theme-dark [role="img"][aria-label] foreignObject,
-.theme-dark foreignObject[mask*="url(#svg-mask-voice-user-summary-item)"] {
-    -webkit-mask: none !important;
-    mask: none !important;
-}
-.theme-dark [role="img"][aria-label] svg rect {
-    display: none;
-}
-
-.theme-dark [class*="cursorDefault"],
-.theme-dark [class*="dots"] {
-    overflow: visible;
-}
-
-.theme-dark [class*="dots"] [cx="2.5"] {
-    cy: -8;
-    cx: -8.5;
-    color: var(--background-tertiary);
-}
-.theme-dark [class*="dots"] [cx="8.75"] {
-    cy: -8;
-    cx: -2.25;
-    color: var(--background-tertiary);
-}
-.theme-dark [class*="dots"] [cx="15"] {
-    cy: -8;
-    cx: 4;
-    color: var(--background-tertiary);
-}
-
-.theme-dark [role="img"][aria-label]::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--ayu-border-radius);
-    z-index: 20;
-}
-
-/* Statuses as shadows */
-.theme-dark [role="img"][aria-label*="オンライン"]::before,
-.theme-dark [role="img"][aria-label*="Online"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-online);
-}
-.theme-dark [role="img"][aria-label*="取り込み中"]::before,
-.theme-dark [role="img"][aria-label*="Do Not Disturb"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-dnd);
-}
-.theme-dark [role="img"][aria-label*="退席中"]::before,
-.theme-dark [role="img"][aria-label*="Idle"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-idle);
-}
-.theme-dark [role="img"][aria-label*="配信"]::before,
-.theme-dark [role="img"][aria-label*="Streaming"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-streaming);
-}
-
-.theme-dark [role="img"][aria-label*="オフライン"]::before,
-.theme-dark [role="img"][aria-label*="オンライン状態を隠す"]::before,
-.theme-dark [role="img"][aria-label*="Offline"]::before,
-.theme-dark [role="img"][aria-label*="Invisible"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-offline);
-}
-
-/* userPopout hover mask */
-.theme-dark [class*="avatarHint"] foreignObject {
-    -webkit-mask: none !important;
-    mask: none !important;
-    border-radius: var(--ayu-border-radius) !important;
-}
-
-/* END SECTION: Avatars */
-
-/* SECTION: Server list */
-
-.theme-dark [class*="wrapper"] [class*="svg"] foreignObject,
-.theme-dark [data-ref-id*="guildsnav"] [class*="wrapper"] foreignObject,
-.theme-dark [data-ref-id*="guildsnav"] [class*="blobContainer"] foreignObject {
-    -webkit-mask: none !important;
-    mask: none !important;
-    border-radius: var(--ayu-border-radius) !important;
-}
-
-.theme-dark [class*="folderIconWrapper"] {
-    border-radius: var(--ayu-border-radius) !important;
-    background: var(--ayu-folder-icon);
-    background-size: 24px;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: none !important;
-}
-
-.theme-dark [class*="folderIconWrapper"]::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: inherit;
-    content: " ";
-}
-
-.theme-dark [class*="numberBadge"],
-.theme-dark [class*="iconBadge"] {
-    border-radius: var(--ayu-icon-badge-radius) !important;
-}
-
-.theme-dark [data-ref-id*="guildsnav"] [class*="wrapper"] [class*="folder"] {
-    border-radius: var(--ayu-border-radius) !important;
-}
-
-.theme-dark [class*="closedFolderIconWrapper"] {
-    display: none;
-}
-.theme-dark [class*="expandedFolderIconWrapper"] {
-    display: none !important;
-}
-
-.theme-dark [class*="expandedFolderBackground"] {
-    border-radius: var(--ayu-border-radius) !important;
-}
+/* SECTION: Server List */
 
 .theme-dark [class*="circleIconButton"] {
     color: var(--ayu-positive);
@@ -594,6 +362,7 @@
     background-color: var(--background-secondary-alt) !important;
 }
 
+.theme-dark [class*="menu"],
 .theme-dark [role="dialog"] [class*="reactors"] {
     background-color: var(--background-primary) !important;
 }
@@ -604,17 +373,9 @@
     background-color: var(--background-secondary);
 }
 
-.theme-dark [class*="menu"] {
-    background-color: var(--background-primary) !important;
-}
-
+.theme-light [class*="focusLock"] [class*="root"][class*="small"],
 .theme-dark [class*="focusLock"] [class*="modalContents"],
 .theme-dark [class*="focusLock"] [class*="modal"] {
-    background-color: var(--background-floating);
-}
-
-/* That one dumb light mode modal */
-.theme-light [class*="focusLock"] [class*="root"][class*="small"] {
     background-color: var(--background-floating);
 }
 

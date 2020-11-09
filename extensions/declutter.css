@@ -1,6 +1,9 @@
 /* Hides side panels in main chat viewport to de-clutter */
 
-/* If using this alone, change var(--ayu-transition-duration) to a numerical value */
+.theme-light,
+.theme-dark {
+    --ayu-transition-duration: 0.25s;
+}
 
 .theme-dark .chat-3bRxxu {
     padding-left: 10px;
