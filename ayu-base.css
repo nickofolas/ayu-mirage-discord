@@ -34,7 +34,8 @@ html.theme-light::before {
 
 .theme-dark .hljs-selector-class,
 .theme-dark .hljs-symbol,
-.theme-dark .hljs-title {
+.theme-dark .hljs-title,
+.theme-dark .hljs-type {
     color: var(--ayu-hljs-title) !important;
 }
 
