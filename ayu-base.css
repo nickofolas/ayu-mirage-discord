@@ -42,7 +42,8 @@ html.theme-light::before {
     color: var(--ayu-hljs-special) !important;
 }
 .theme-dark .hljs-section,
-.theme-dark .hljs-attribute {
+.theme-dark .hljs-attribute,
+.theme-dark .hljs-name {
     color: var(--ayu-hljs-attr) !important;
 }
 .theme-dark .hljs-variable {
