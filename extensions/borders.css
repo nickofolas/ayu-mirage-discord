@@ -187,3 +187,8 @@ Changes border radius-es on things like avatars, server icons
     foreignObject {
     mask: none !important;
 }
+
+.theme-dark [class*="userInfo"] {
+    overflow: unset;
+    margin-left: 5px;
+}
