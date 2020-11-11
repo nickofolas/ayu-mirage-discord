@@ -86,17 +86,9 @@ html.theme-light::before {
 
 /* SECTION: Misc. tweaks */
 
-/* Unread indicators */
-.theme-dark [id^="channels"] [class*="unread"] {
-    z-index: 5 !important;
-    right: 0% !important;
-    border-radius: 25px;
-    position: absolute;
-    margin-top: -4px;
-    height: 32px;
-    width: 4px;
-    left: 98%;
-    top: 4px;
+/* Codeblock content fitting */
+.theme-dark [class*=markup] code {
+    width: fit-content;
 }
 
 /* Mic Test thing */

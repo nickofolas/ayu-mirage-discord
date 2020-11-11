@@ -5,6 +5,18 @@
     --ayu-transition-duration: 0.25s;
 }
 
+.theme-dark [id^="channels"] [class*="unread"] {
+    z-index: 5 !important;
+    right: 0% !important;
+    border-radius: 25px;
+    position: absolute;
+    margin-top: -4px;
+    height: 32px;
+    width: 4px;
+    left: 98%;
+    top: 4px;
+}
+
 .theme-dark .chat-3bRxxu {
     padding-left: 10px;
 }
