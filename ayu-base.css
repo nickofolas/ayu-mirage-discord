@@ -14,44 +14,44 @@ html.theme-light::before {
 }
 
 /* SECTION: hljs syntax highlighting */
-.theme-dark [class^="codeBlockLang"],
-.theme-dark .hljs-doctag,
-.theme-dark .hljs-literal,
-.theme-dark .hljs-number,
-.theme-dark .hljs-meta-string,
-.theme-dark .hljs-regexp,
-.theme-dark .hljs-string,
-.theme-dark .hljs-addition {
+[class^="codeBlockLang"],
+.hljs-doctag,
+.hljs-literal,
+.hljs-number,
+.hljs-meta-string,
+.hljs-regexp,
+.hljs-string,
+.hljs-addition {
     color: var(--ayu-hljs-string) !important;
 }
 
-.theme-dark .hljs-meta,
-.theme-dark .hljs-subst,
-.theme-dark .hljs-attr,
-.theme-dark .hljs-keyword {
+.hljs-meta,
+.hljs-subst,
+.hljs-attr,
+.hljs-keyword {
     color: var(--ayu-hljs-kw) !important;
 }
 
-.theme-dark .hljs-selector-class,
-.theme-dark .hljs-symbol,
-.theme-dark .hljs-title,
-.theme-dark .hljs-type {
+.hljs-selector-class,
+.hljs-symbol,
+.hljs-title,
+.hljs-type {
     color: var(--ayu-hljs-title) !important;
 }
 
-.theme-dark .hljs-built_in {
+.hljs-built_in {
     color: var(--ayu-hljs-special) !important;
 }
-.theme-dark .hljs-section,
-.theme-dark .hljs-attribute,
-.theme-dark .hljs-name {
+.hljs-section,
+.hljs-attribute,
+.hljs-name {
     color: var(--ayu-hljs-attr) !important;
 }
-.theme-dark .hljs-variable {
+.hljs-variable {
     color: var(--ayu-hljs-variable) !important;
 }
 
-.theme-dark .hljs-deletion {
+.hljs-deletion {
     color: var(--ayu-negative) !important;
 }
 
@@ -59,26 +59,26 @@ html.theme-light::before {
 
 /* SECTION: Menu */
 
-.theme-dark [class*="colorDanger"]:not(:hover):not(:active) {
+[class*="colorDanger"]:not(:hover):not(:active) {
     color: var(--ayu-menu-red) !important;
     background-color: transparent !important;
 }
 
-.theme-dark [class*="colorDanger"]:hover,
-.theme-dark [class*="colorDanger"]:hover [class*="colorDefault"],
-.theme-dark [class*="colorDanger"]:active [class*="colorDefault"],
-.theme-dark [class*="colorDanger"]:active {
+[class*="colorDanger"]:hover,
+[class*="colorDanger"]:hover [class*="colorDefault"],
+[class*="colorDanger"]:active [class*="colorDefault"],
+[class*="colorDanger"]:active {
     background-color: var(--ayu-menu-red) !important;
     border-color: var(--ayu-menu-red) !important;
 }
 
-.theme-dark [class*="colorDefault"]:hover,
-.theme-dark [class*="colorDefault"]:active,
-.theme-dark [class*="colorDefault"][class*="focused"] {
+[class*="colorDefault"]:hover,
+[class*="colorDefault"]:active:not([class*=hideInteraction]),
+[class*="colorDefault"][class*="focused"] {
     background-color: var(--ayu-menu-default);
 }
 
-.theme-dark [id*="message-quickreact"] [class*="button"] {
+[id*="message-quickreact"] [class*="button"] {
     border-radius: var(--ayu-border-radius) !important;
 }
 
@@ -87,136 +87,157 @@ html.theme-light::before {
 /* SECTION: Misc. tweaks */
 
 /* Codeblock content fitting */
-.theme-dark [class*=markup] code {
+[class*=markup] code {
     width: fit-content;
 }
 
 /* Mic Test thing */
-.theme-dark [class*="micTest"] [class*="container"] {
+[class*="micTest"] [class*="container"] {
     border-radius: var(--ayu-border-radius) !important;
 }
 
-.theme-dark [class*="micTest"] [class*="container"] [class*="notches"] {
+[class*="micTest"] [class*="container"] [class*="notches"] {
     display: none;
 }
 
-.theme-dark [class*="micTest"] [class*="container"] [class*="progress"] {
+[class*="micTest"] [class*="container"] [class*="progress"] {
     background-color: var(--background-secondary) !important;
 }
 
 /* Bot tag customisation */
-.theme-dark [class*="botTag"] {
+[class*="botTag"] {
     background-color: var(--ayu-bot-tag-bg-colour);
     color: var(--ayu-bot-tag-fg-colour);
     border-radius: var(--ayu-bot-tag-radius);
 }
 
 /* Settings hovering */
-.theme-dark [class*="card"][class*="member"]::before,
-.theme-dark [class*="card"][class*="game"]::before,
-.theme-dark [class*="card"][class*="bannedUser"]::before,
-.theme-dark [class*="card"][class*="InviteRow"]::before,
-.theme-dark [class*="card"][class*="emojiRow"]::before {
+[class*="card"][class*="member"]::before,
+[class*="card"][class*="game"]::before,
+[class*="card"][class*="bannedUser"]::before,
+[class*="card"][class*="InviteRow"]::before,
+[class*="card"][class*="emojiRow"]::before {
     background-color: var(--background-secondary) !important;
     border: none !important;
 }
-.theme-dark input[class*="emojiInput"] {
+input[class*="emojiInput"] {
     background-color: var(--background-secondary-alt) !important;
 }
 
 /* Roles adding menu */
-.theme-dark [role="dialog"][aria-label="Add Role"] [class*="header"] {
+[role="dialog"][aria-label="Add Role"] [class*="header"] {
     background-color: var(--background-secondary) !important;
 }
-.theme-dark [role="dialog"][aria-label="Add Role"] [class*="sectionTag"] {
+[role="dialog"][aria-label="Add Role"] [class*="sectionTag"] {
     background-color: var(--background-floating) !important;
 }
 
 /* Audit log filters */
-.theme-dark [class*="FilterPopout"] {
+[class*="FilterPopout"] {
     background-color: var(--background-floating) !important;
 }
-.theme-dark [class*="FilterPopout"] > [class*="scroller"] > [class*="selected"] {
+[class*="FilterPopout"] > [class*="scroller"] > [class*="selected"] {
     background-color: var(--ayu-default) !important;
 }
 
 /* Search thingy */
-.theme-dark [id*="search-results"] [class*="queryContainer"][class*="focused"],
-.theme-dark [id*="search-results"][class*="container"] {
+[id*="search-results"] [class*="queryContainer"][class*="focused"],
+[id*="search-results"][class*="container"] {
     background-color: var(--background-floating) !important;
 }
-.theme-dark [id*="search-results"][class*="option"]::after {
+[id*="search-results"][class*="option"]::after {
     background: none !important;
 }
 
 /* Stream controls and stuff */
-.theme-dark [class*="bottomControls"] [class*="colorable"][class*="primaryDark"] {
+[class*="bottomControls"] [class*="colorable"][class*="primaryDark"] {
     background-color: var(--background-accent);
 }
 
 /* Go Live window */
-.theme-dark [role="dialog"] [class*="modalSize"][class*="root"],
-.theme-dark [class*="segmentContainer"] [class*="segmentControl"] {
+[role="dialog"] [class*="modalSize"][class*="root"],
+[class*="segmentContainer"] [class*="segmentControl"] {
     background-color: var(--background-floating);
 }
 
 /* Quick switcher */
-.theme-dark [class*="quickswitcher"] > [class*="input"] {
+[class*="quickswitcher"] > [class*="input"] {
     background-color: var(--background-secondary-alt) !important;
 }
 
-.theme-dark [class*="formNotice"],
-.theme-dark [class*="notDetected"],
-.theme-dark [class*="userSettingsVoice"] [class*="previewOverlay"],
-.theme-dark [class*="codeRedemptionRedirect"] {
+[class*="formNotice"],
+[class*="notDetected"],
+[class*="userSettingsVoice"] [class*="previewOverlay"],
+[class*="codeRedemptionRedirect"] {
     background-color: var(--background-floating) !important;
 }
 
 /* Little keyboard button things */
-.theme-dark [class*="keybindShortcut"] span {
+[class*="keybindShortcut"] span {
     background-color: var(--background-accent) !important;
+}
+
+/* Confirmation region */
+[class*=noticeRegion] [class*=elevationHigh] {
+    background-color: var(--background-floating) !important;
 }
 
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
 
-.theme-dark [class*="slider"] > div[class*="bar"] {
+[class*="slider"] > div[class*="bar"] {
     background-color: var(--background-floating) !important;
 }
 
-.theme-dark div[class*="barFill"],
-.theme-dark [aria-label="Home"][class*="wrapper"][class*="selected"] [class*="childWrapper"],
-.theme-dark [class*="radioGroup"] [class*="cardPrimaryEditable"][style*="rgb(114, 137, 218)"],
-.theme-dark [class*="valueChecked"],
-.theme-dark button[class*="lookFilled"][class*="colorBrand"] { background-color: var(--ayu-button-default) !important; }
+div[class*="barFill"],
+[aria-label="Home"][class*="wrapper"][class*="selected"] [class*="childWrapper"],
+[class*="radioGroup"] [class*="cardPrimaryEditable"][style*="rgb(114, 137, 218)"],
+[class*="valueChecked"],
+button[class*="lookFilled"][class*="colorBrand"] { 
+    background-color: var(--ayu-button-default) !important; 
+}
 
-.theme-dark [class*="valueUnchecked"] { background-color: var(--background-accent) !important; }
-.theme-dark button[class*="lookFilled"][class*="colorGreen"] { background-color: var(--ayu-button-positive) !important; }
-.theme-dark button[class*="lookFilled"][class*="colorRed"] { background-color: var(--ayu-button-negative) !important; }
-.theme-dark button[class*="lookFilled"][class*="colorGrey"],
-.theme-dark button[class*="lookFilled"][class*="colorPrimary"] { background-color: var(--background-accent) !important; }
-.theme-dark [class*="notificationSettings"] label:not([class*="disabled"]):hover,
-.theme-dark [class*="notificationSettings"] label[class*="selected"] { background-color: var(--ayu-default) !important; }
+[class*="valueUnchecked"] {
+     background-color: var(--background-accent) !important; 
+}
+
+button[class*="lookFilled"][class*="colorGreen"] {
+    background-color: var(--ayu-button-positive) !important; 
+}
+
+button[class*="lookFilled"][class*="colorRed"] { 
+    background-color: var(--ayu-button-negative) !important;
+}
+
+button[class*="lookFilled"][class*="colorGrey"],
+button[class*="lookFilled"][class*="colorPrimary"] { 
+    background-color: var(--background-accent) !important; 
+}
+
+[class*="notificationSettings"] label:not([class*="disabled"]):hover,
+[class*="notificationSettings"] label[class*="selected"] { 
+    background-color: var(--ayu-default) !important; 
+}
 
 /* END SECTION: Buttons */
 
 /* SECTION: Small user popout */
 
-.theme-dark [class*="headerSpotify"] { background-color: var(--ayu-presence-spotify) !important; }
-.theme-dark [class*="headerPlaying"] { background-color: var(--ayu-presence-playing) !important; }
-.theme-dark [class*="headerStreaming"] { background-color: var(--ayu-presence-streaming) !important; }
-.theme-dark [class*="headerNormal"] { background-color: var(--background-secondary); }
-.theme-dark [class^="header"] [class*="body"] { background-color: transparent !important; }
-.theme-dark [class*="userPopout"] > [class*="body"],
-.theme-dark [class*="userPopout"] [class*="footer"] { background-color: var(--background-floating) !important; }
+[class*="headerSpotify"] { background-color: var(--ayu-presence-spotify) !important; }
+[class*="headerPlaying"] { background-color: var(--ayu-presence-playing) !important; }
+[class*="headerStreaming"] { background-color: var(--ayu-presence-streaming) !important; }
+[class*="headerNormal"] { background-color: var(--background-secondary); }
+[class^="header"] [class*="body"] { background-color: transparent !important; }
+[class*="userPopout"] > [class*="body"],
+[class*="userPopout"] [class*="footer"] { background-color: var(--background-floating) !important; }
 
 /* END SECTION: User popouts */
 
 /* SECTION: Various info bars */
 
-.theme-dark [class*="messagesErrorBar"] { background-color: var(--ayu-negative) !important; }
-.theme-dark [class*="newMessagesBar"] {
+[class*="messagesErrorBar"] { background-color: var(--ayu-negative) !important; }
+[class*="newMessagesBar"] {
     background-color: var(--ayu-default) !important;
     opacity: 0.75;
 }
@@ -225,85 +246,97 @@ html.theme-light::before {
 
 /* SECTION: Server List */
 
-.theme-dark [class*="circleIconButton"] { color: var(--ayu-positive); }
-.theme-dark [class*="circleIconButton"][class*="selected"],
-.theme-dark [class*="circleIconButton"]:hover {
+[class*="circleIconButton"] { color: var(--ayu-positive); }
+[class*="circleIconButton"][class*="selected"],
+[class*="circleIconButton"]:hover {
     background-color: var(--ayu-positive) !important;
     color: white !important;
 }
-.theme-dark [class*="guildSeparator"] { background-color: var(--background-accent) !important; }
-.theme-dark [aria-label="Home"] [class*="childWrapper"] { background-color: var(--background-accent) !important; }
-.theme-dark [class*="tooltipBlack"] { background-color: var(--background-tertiary) !important; }
-.theme-dark [class*="tooltipBlack"] [class*="tooltipPointer"] { border-top-color: var(--background-tertiary) !important; }
+[class*="guildSeparator"] { 
+    background-color: var(--background-accent) !important; 
+}
+[aria-label="Home"] [class*="childWrapper"] { 
+    background-color: var(--background-accent) !important; 
+}
+
+[class*="tooltipBlack"],
+[class*="tooltipGrey"] { 
+    background-color: var(--background-tertiary) !important; 
+}
+[class*="tooltip"] [class*="tooltipPointer"] { 
+    border-top-color: var(--background-tertiary) !important; 
+}
 
 /* END SECTION: Server list */
 
 /* SECTION: Large user popouts */
 
-.theme-dark [class*="topSectionPlaying"] { background-color: var(--ayu-default); }
-.theme-dark [class*="topSectionStreaming"] { background-color: var(--ayu-presence-streaming); }
-.theme-dark [class*="topSectionSpotify"] { background-color: var(--ayu-positive); }
+[class*="topSectionPlaying"] { background-color: var(--ayu-default); }
+[class*="topSectionStreaming"] { background-color: var(--ayu-presence-streaming); }
+[class*="topSectionSpotify"] { background-color: var(--ayu-positive); }
 
 /* END SECTION: Large user popouts */
 
 /* SECTION: Friends list */
 
-.theme-dark [class*="peopleColumn"] { background-color: var(--background-primary) !important; }
-.theme-dark [aria-label="Add Friend"][class*="item"][role="button"] { background-color: var(--ayu-positive) !important; }
+[class*="peopleColumn"] { background-color: var(--background-primary) !important; }
+[aria-label="Add Friend"][class*="item"][role="button"] { background-color: var(--ayu-positive) !important; }
 
-.theme-dark [class*="itemCard"][class*="interactive"]:hover,
-.theme-dark [class*="itemCard"][class*="interactive"] [class*="inset"] section[class*="section"] { background-color: var(--background-tertiary); }
-.theme-dark [role="dialog"] > [class*="popout"] > [style] { background-color: var(--background-floating) !important; }
+[class*="itemCard"][class*="interactive"]:hover,
+[class*="itemCard"][class*="interactive"] [class*="inset"] section[class*="section"] { background-color: var(--background-tertiary); }
+[role="dialog"] > [class*="popout"] > [style] { background-color: var(--background-floating) !important; }
 
 /* END SECTION: Friends list */
 
 /* SECTION: Modals */
 
-.theme-dark [class*="addGamePopout"],
-.theme-dark [class*="keyboardShortcutsModal"],
-.theme-dark [class*="uploadModal"],
-.theme-dark [class*="uploadModal"] > [class*="inner"],
-.theme-dark [role="dialog"] [class*="content"][class*="thin"][class*="scrollerBase"],
-.theme-dark [role="dialog"] [class*="header"][class*="horizontal"] {
+[class*="root"][class*="small"],
+[class*="modalContents"],
+[class*="modal"],
+[class*=colorPickerCustom],
+[class*=streamPreviewWrapper] [class*=streamPreview],
+[class*="addGamePopout"],
+[class*="keyboardShortcutsModal"],
+[class*="uploadModal"],
+[class*="uploadModal"] > [class*="inner"],
+[role="dialog"] [class*="content"][class*="thin"][class*="scrollerBase"],
+[role="dialog"] [class*="header"][class*="horizontal"] {
     background-color: var(--background-floating) !important;
 }
-.theme-dark [role="dialog"] [class*="footer"] {
+[role="dialog"] [class*="footer"] {
     background-color: var(--background-secondary);
 }
-
-.theme-dark [role="dialog"] [class*="message"] {
+[role="dialog"] [class*="message"] {
     background-color: var(--background-secondary-alt) !important;
 }
-
-.theme-dark [class*="menu"],
-.theme-dark [role="dialog"] [class*="reactors"] {
+[class*="menu"],
+[role="dialog"] [class*="reactors"] {
     background-color: var(--background-primary) !important;
 }
-.theme-dark [role="dialog"] [class*="modal"] [class*="thin"][class*="scroller"] {
+[role="dialog"] [class*="modal"] [class*="thin"][class*="scroller"] {
     background-color: var(--background-secondary);
 }
 
-.theme-light [class*="focusLock"] [class*="root"][class*="small"],
-.theme-dark [class*="focusLock"] [class*="modalContents"],
-.theme-dark [class*="focusLock"] [class*="modal"] {
-    background-color: var(--background-floating);
-}
-
-.theme-light [class*="focusLock"] [class*="root"][class*="small"],
-.theme-light [class*="focusLock"] [class*="root"][class*="small"] div {
+[class*="root"][class*="small"],
+[class*="root"][class*="small"] div {
     box-shadow: none !important;
     color: var(--text-normal);
 }
 
-.theme-light [class*="focusLock"] [class*="root"][class*="small"] a {
+[class*="root"][class*="small"] a {
     color: var(--text-link);
+}
+
+[class*=regionSelectModal] > div > [class*=regionSelectModalOption] {
+    background-color: var(--background-secondary-alt) !important;
+    border-color: var(--background-tertiary) !important;
 }
 
 /* END SECTION: Modals */
 
 /* SECTION: Server Discovery page */
 
-.theme-dark [class*="pageWrapper"] {
+[class*="pageWrapper"] {
     background-color: var(--background-primary) !important;
 }
 
@@ -311,10 +344,10 @@ html.theme-light::before {
 
 /* SECTION: Emoji and mention suggestions */
 
-.theme-dark [class*="autocomplete"] {
+[class*="autocomplete"] {
     background-color: var(--background-floating) !important;
 }
-.theme-dark [class*="autocomplete"] [class*="selected"] {
+[class*="autocomplete"] [class*="selected"] {
     background-color: var(--background-secondary) !important;
 }
 
@@ -322,18 +355,18 @@ html.theme-light::before {
 
 /* SECTION: Nitro Boost Page */
 
-.theme-dark [class*="perksModal"] {
+[class*="perksModal"] {
     background-color: var(--background-primary) !important;
 }
-.theme-dark [class*="perksModal"] [class*="tierMarkerContainer"] [class*="tierMarkerBackground"],
-.theme-dark [class*="perksModal"] [class^="perks"] > [class^="perk"] {
+[class*="perksModal"] [class*="tierMarkerContainer"] [class*="tierMarkerBackground"],
+[class*="perksModal"] [class^="perks"] > [class^="perk"] {
     background-color: var(--background-floating) !important;
 }
 
-.theme-dark [class*="tierBody"] {
+[class*="tierBody"] {
     background-color: var(--background-floating) !important;
 }
-.theme-dark [class*="tierHeaderLocked"] {
+[class*="tierHeaderLocked"] {
     background-color: var(--background-secondary) !important;
 }
 
