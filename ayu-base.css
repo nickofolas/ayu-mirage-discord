@@ -184,6 +184,13 @@ input[class*="emojiInput"] {
     background-color: var(--background-floating) !important;
 }
 
+/* Game invites */
+[class*=preview][class*=invite],
+[class*=message] [class*=invite] {
+    background-color: var(--background-secondary);
+    border-color: var(--background-secondary-alt) !important;
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
@@ -364,8 +371,8 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 }
 
 [class*=regionSelectModal] > div > [class*=regionSelectModalOption] {
-    background-color: var(--background-secondary-alt) !important;
-    border-color: var(--background-tertiary) !important;
+    background-color: var(--background-secondary) !important;
+    border-color: var(--background-secondary-alt) !important;
 }
 
 /* END SECTION: Modals */
