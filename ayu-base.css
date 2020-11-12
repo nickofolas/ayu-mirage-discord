@@ -120,6 +120,8 @@ html.theme-light::before {
     background-color: var(--background-secondary) !important;
     border: none !important;
 }
+
+
 input[class*="emojiInput"] {
     background-color: var(--background-secondary-alt) !important;
 }
@@ -224,13 +226,30 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 /* SECTION: Small user popout */
 
-[class*="headerSpotify"] { background-color: var(--ayu-presence-spotify) !important; }
-[class*="headerPlaying"] { background-color: var(--ayu-presence-playing) !important; }
-[class*="headerStreaming"] { background-color: var(--ayu-presence-streaming) !important; }
-[class*="headerNormal"] { background-color: var(--background-secondary); }
-[class^="header"] [class*="body"] { background-color: transparent !important; }
+[class*="headerSpotify"] { 
+    background-color: var(--ayu-presence-spotify) !important; 
+}
+
+[class*="headerPlaying"] { 
+    background-color: var(--ayu-presence-playing) !important; 
+}
+
+[class*="headerStreaming"] { 
+    background-color: var(--ayu-presence-streaming) !important; 
+}
+
+[class*="headerNormal"] { 
+    background-color: var(--background-secondary) !important; 
+}
+
+[class^="header"] [class*="body"] { 
+    background-color: transparent !important; 
+}
+
 [class*="userPopout"] > [class*="body"],
-[class*="userPopout"] [class*="footer"] { background-color: var(--background-floating) !important; }
+[class*="userPopout"] [class*="footer"] { 
+    background-color: var(--background-floating) !important; 
+}
 
 /* END SECTION: User popouts */
 
@@ -279,20 +298,27 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 /* SECTION: Friends list */
 
-[class*="peopleColumn"] { background-color: var(--background-primary) !important; }
-[aria-label="Add Friend"][class*="item"][role="button"] { background-color: var(--ayu-positive) !important; }
+[class*="peopleColumn"] { 
+    background-color: var(--background-primary) !important; 
+}
+
+[aria-label="Add Friend"][class*="item"][role="button"] { 
+    background-color: var(--ayu-positive) !important; 
+}
 
 [class*="itemCard"][class*="interactive"]:hover,
-[class*="itemCard"][class*="interactive"] [class*="inset"] section[class*="section"] { background-color: var(--background-tertiary); }
-[role="dialog"] > [class*="popout"] > [style] { background-color: var(--background-floating) !important; }
+[class*="itemCard"][class*="interactive"] [class*="inset"] section[class*="section"] { 
+    background-color: var(--background-tertiary); 
+}
+
+[role="dialog"] > [class*="popout"] > [style] { 
+    background-color: var(--background-floating) !important; 
+}
 
 /* END SECTION: Friends list */
 
 /* SECTION: Modals */
 
-[class*="root"][class*="small"],
-[class*="modalContents"],
-[class*="modal"],
 [class*=colorPickerCustom],
 [class*=streamPreviewWrapper] [class*=streamPreview],
 [class*="addGamePopout"],
@@ -303,16 +329,26 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 [role="dialog"] [class*="header"][class*="horizontal"] {
     background-color: var(--background-floating) !important;
 }
+
+[class*="root"][class*="small"],
+[class*="modalContents"] {
+    background-color: var(--background-floating)
+}
+
 [role="dialog"] [class*="footer"] {
     background-color: var(--background-secondary);
 }
+
 [role="dialog"] [class*="message"] {
     background-color: var(--background-secondary-alt) !important;
 }
+
 [class*="menu"],
 [role="dialog"] [class*="reactors"] {
     background-color: var(--background-primary) !important;
+    border-color: var(--background-secondary-alt);
 }
+
 [role="dialog"] [class*="modal"] [class*="thin"][class*="scroller"] {
     background-color: var(--background-secondary);
 }
