@@ -347,7 +347,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 }
 
 [role="dialog"] [class*="message"] {
-    background-color: var(--background-secondary-alt) !important;
+    background-color: var(--background-primary) !important;
 }
 
 [class*="menu"],
