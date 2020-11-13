@@ -87,7 +87,7 @@ html.theme-light::before {
 /* SECTION: Misc. tweaks */
 
 /* Codeblock content fitting */
-[class*=markup] code {
+[class*=markup]:not([class*=embedWrapper]) code {
     width: fit-content;
 }
 
