@@ -8,7 +8,7 @@ html.theme-light::before {
     color: var(--ayu-negative);
     text-align: center;
     position: absolute;
-    z-index: 1001;
+    z-index: 10001;
     right: 0;
     left: 0;
 }
