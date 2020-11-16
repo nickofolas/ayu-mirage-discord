@@ -28,7 +28,9 @@ html.theme-light::before {
 .hljs-meta,
 .hljs-subst,
 .hljs-attr,
-.hljs-keyword {
+.hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
     color: var(--ayu-hljs-kw) !important;
 }
 
