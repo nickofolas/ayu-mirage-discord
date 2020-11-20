@@ -46,7 +46,8 @@ html.theme-light::before {
 }
 .hljs-section,
 .hljs-attribute,
-.hljs-name {
+.hljs-name,
+.hljs-selector-tag {
     color: var(--ayu-hljs-attr) !important;
 }
 .hljs-variable {
@@ -91,6 +92,12 @@ html.theme-light::before {
 /* Codeblock content fitting */
 [class*=markup]:not([class*=embedWrapper]) code {
     width: fit-content;
+}
+
+/* Scrollable codeblocks */
+[class*=markup] code {
+    white-space: pre!important;
+    overflow-x: scroll;
 }
 
 /* Mic Test thing */
