@@ -77,4 +77,6 @@
 
     --scrollbar-auto-thumb: var(--background-secondary);
     --scrollbar-auto-track: var(--background-primary);
+
+    --ayu-notification-color: #a29bfe;
 }

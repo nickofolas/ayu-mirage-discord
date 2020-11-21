@@ -95,6 +95,12 @@ html.theme-light::before {
     overflow-x: scroll;
 }
 
+/* Porple notifs www */
+div[class*=numberBadge],
+div[class*=unreadBar] {
+    background-color: var(--ayu-notification-colour)!important;
+}
+
 /* Mic Test thing */
 [class*="micTest"] [class*="container"] {
     border-radius: var(--ayu-border-radius) !important;
