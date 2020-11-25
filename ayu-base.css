@@ -95,6 +95,14 @@ html.theme-light::before {
     overflow-x: scroll;
 }
 
+[class*=markup] code::-webkit-scrollbar {
+    height: 7.5px;
+}
+
+[class*=markup] code::-webkit-scrollbar-thumb {
+    background-color: var(--background-accent)!important;
+}
+
 /* Porple notifs www */
 div[class*=numberBadge],
 div[class*=unreadBar] {
