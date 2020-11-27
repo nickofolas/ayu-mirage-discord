@@ -1,5 +1,6 @@
 form[class*=form]:not(:hover) [class*=placeholder],
-form[class*=form]:not(:hover) button[type=button],
+form[class*=form]:not(:hover) div[class*=buttons] button,
+form[class*=form]:not(:hover) button[class*=attachButton],
 form[class*=form]:not(:hover) [class*=contentWrapper],
 form[class*=form]:not(:hover) [class*=drawerSizingWrapper],
 form[class*=form]:not(:hover) div[class*=slateTextArea][class*=markup][role=textbox] {
