@@ -90,7 +90,7 @@ html.theme-light::before {
 /* SECTION: Misc. tweaks */
 
 /* Scrollable codeblocks */
-[class*=markup] code {
+[class*=markup] code:not(.inline) {
     white-space: pre!important;
     overflow-x: scroll;
 }
