@@ -361,6 +361,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 [class*="newMessagesBar"] {
     background-color: var(--ayu-default) !important;
     opacity: 0.75;
+    z-index: 20;
 }
 
 /* END SECTION: bars */
@@ -538,7 +539,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 /* END SECTION: Nitro Boost Page */
 
-/* SECTION: User Thingy on bottom right */
+/* SECTION: User Thingy on bottom left */
 
 [class*=avatarWrapper] > [class*=avatar][class*=wrapper] {
     padding: 4px;
@@ -554,7 +555,9 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 [class*=container],
 [class*=applicationStore],
 [class*=pageWrapper],
-[class*=wrapper]:not([class*=guilds]) { z-index: 6;}
+[class*=wrapper]:not([class*=guilds]) {
+    z-index: 6;
+}
 
 [class*=channelTextArea],
 [class*=jumpToPresentBar] {
@@ -564,6 +567,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 [class*=animatorTop] > [class*=styleFixed] {
     width: 42px;
+    left: 2px;
     background: var(--background-tertiary)!important;
 }
 
@@ -604,4 +608,4 @@ section[class*=panels] > div[class*=container] {
     height: 0;
 }
 
-/* END SECTION: User Thingy on bottom right */
+/* END SECTION: User Thingy on bottom left */
