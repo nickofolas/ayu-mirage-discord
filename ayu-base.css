@@ -209,6 +209,25 @@ input[class*="emojiInput"] {
     border-color: var(--background-secondary-alt) !important;
 }
 
+/* Replies */
+[class*=message] [class*=cozy] [class*=repliedMessage] {
+    background-color: var(--background-secondary);
+    border-radius: var(--ayu-border-radius);
+    width: fit-content;
+    padding: 4px;
+    margin: 0;
+}
+
+[class*=message] [class*=cozy] [class*=repliedMessage]::before {
+    display: none;
+}
+
+img[class*=replyAvatar] {
+    background-color: var(--background-secondary-alt);
+    content: var(--ayu-reply-icon);
+    padding: 1.5px;
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
@@ -250,21 +269,31 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 /* END SECTION: Buttons */
 
 /* SECTION: Small user popout */
-
-[class*="headerSpotify"] { 
-    background-color: var(--ayu-presence-spotify) !important; 
-}
-
-[class*="headerPlaying"] { 
-    background-color: var(--ayu-presence-playing) !important; 
-}
-
-[class*="headerStreaming"] { 
-    background-color: var(--ayu-presence-streaming) !important; 
-}
-
+[class*="headerSpotify"], 
+[class*="headerPlaying"], 
+[class*="headerStreaming"],
+[class*="headerXbox"], 
 [class*="headerNormal"] { 
     background-color: var(--background-secondary) !important; 
+}
+
+[class^=header] [class*=activityUserPopout][class*=activity] {
+    padding: 12px;
+    margin: 8px;
+    border-radius: var(--ayu-border-radius);
+}
+
+[class*=headerXbox] [class*=activity],
+[class*=headerSpotify] [class*=activity] {
+    background-color: var(--ayu-presence-spotify);
+}
+
+[class*=headerPlaying] [class*=activity] {
+    background-color: var(--ayu-presence-playing);
+}
+
+[class*=headerStreaming] [class*=activity] {
+    background-color: var(--ayu-presence-streaming);
 }
 
 [class^="header"] [class*="body"] { 
@@ -274,6 +303,31 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 [class*="userPopout"] > [class*="body"],
 [class*="userPopout"] [class*="footer"] { 
     background-color: var(--background-floating) !important; 
+}
+
+[class*=rolesList] > [class*=role]:not(button) {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+}
+
+[class*=roleCircle] {
+    border-radius: 0;
+    padding: 0 0 10px 0;
+    width: 6px;
+}
+
+[class*=roleCircle]::before {
+    background: inherit;
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
 }
 
 /* END SECTION: User popouts */
