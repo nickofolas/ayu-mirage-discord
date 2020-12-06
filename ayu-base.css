@@ -305,7 +305,12 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     background-color: var(--background-floating) !important; 
 }
 
+[class*=rolesList] > [class*=role] {
+    border-radius: 2.5px;
+}
+
 [class*=rolesList] > [class*=role]:not(button) {
+    border-radius: 2.5px;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -328,6 +333,23 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     height: 100%;
     opacity: 0.3;
     z-index: -1;
+}
+
+[class*=rolesList] > [class*=role]:not(button):hover {
+    border-color: var(--ayu-negative)!important;
+}
+
+[class*=rolesList] > [class*=role]:not(button):hover [class*=roleCircle] {
+    background-color: var(--ayu-negative)!important;
+}
+
+[class*=rolesList] > [class*=role]:not(button):hover [class*=roleRemoveIcon] {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
 }
 
 /* END SECTION: User popouts */
