@@ -214,6 +214,7 @@ input[class*="emojiInput"] {
     background-color: var(--background-secondary);
     border-radius: var(--ayu-border-radius);
     width: fit-content;
+    max-width: 100%;
     padding: 4px;
     margin: 0;
 }
@@ -395,6 +396,34 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 [class*="topSectionStreaming"] { background-color: var(--ayu-presence-streaming); }
 [class*="topSectionSpotify"] { background-color: var(--ayu-positive); }
 
+
+[class*=headerFill] [class*=activityProfile][class*=activity] {
+    border-radius: var(--ayu-border-radius);
+    margin: 8px 20px 10px 20px;
+}
+
+[class*=topSectionPlaying] [class*=activityProfile][class*=activity] {
+    background-color: var(--ayu-presence-playing);
+}
+
+[class*=topSectionXbox] [class*=activityProfile][class*=activity],
+[class*=topSectionSpotify] [class*=activityProfile][class*=activity] {
+    background-color: var(--ayu-presence-spotify);
+}
+
+[class*=topSectionStreaming] [class*=activityProfile][class*=activity] {
+    background-color: var(--ayu-presence-streaming);
+}
+
+[class^=topSection],
+[class*=headerFill] {
+    background-color: var(--background-secondary);
+}
+
+[class*=tabBarContainer] {
+    border: none;
+}
+
 /* END SECTION: Large user popouts */
 
 /* SECTION: Friends list */
@@ -508,3 +537,71 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 }
 
 /* END SECTION: Nitro Boost Page */
+
+/* SECTION: User Thingy on bottom right */
+
+[class*=avatarWrapper] > [class*=avatar][class*=wrapper] {
+    padding: 4px;
+}
+
+[class*=panels] > [class*=container] > [class*=avatarWrapper] { 
+    position: fixed;
+    z-index: 5;
+    bottom: 31px;
+    left: 325px;
+}
+
+[class*=container],
+[class*=applicationStore],
+[class*=pageWrapper],
+[class*=wrapper]:not([class*=guilds]) { z-index: 6;}
+
+[class*=channelTextArea],
+[class*=jumpToPresentBar] {
+    width: auto;
+    margin-left: 55px;
+}
+
+[class*=animatorTop] > [class*=styleFixed] {
+    width: 42px;
+    background: var(--background-tertiary)!important;
+}
+
+[class*=customEmojiPlaceholder] {
+    background-image: var(--ayu-edit-icon);
+}
+
+[class*=statusItem] > div[class*=description],
+[class*=statusItem] > div[class*=status],
+[class*=statusItem] > div[class*=separator] {
+    display: none;
+}
+
+[class*=clearStatusIcon] {
+    margin-left: -8px;
+}
+
+nav[class*=guilds] ul[class*=tree] {
+    height: 90%;
+}
+
+[class*=container] > [class*=flex][style="flex: 0 1 auto;"] {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    pointer-events: visible;
+}
+
+section[class*=panels] > div[class*=container] > div[class*=nameTag] {
+    display: none;
+}
+
+section[class*=panels] > div[class*=container] {
+    background-color: var(--background-secondary);
+    height: 0;
+}
+
+/* END SECTION: User Thingy on bottom right */
