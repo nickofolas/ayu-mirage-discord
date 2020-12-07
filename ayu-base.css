@@ -565,21 +565,17 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 div[class*=sidebar] > section[class*=panels] > [class*=container] > [class*=avatarWrapper] { 
     position: fixed;
-    bottom: 31px;
+    bottom: 16px;
     z-index: 1;
-    left: 325px;
-}
-
-form[class*=form] [class*=channelTextArea],
-[class*=jumpToPresentBar] {
-    width: auto;
-    margin-left: 55px;
+    left: 13px;
 }
 
 [class*=animatorTop] > [class*=styleFixed] {
-    width: 42px;
-    left: 2px;
-    background: var(--background-tertiary)!important;
+    width: auto;
+    left: 50px;
+    bottom:-61.5px;
+    display: flex;
+    flex-direction: row;
 }
 
 [class*=customEmojiPlaceholder] {
@@ -588,16 +584,16 @@ form[class*=form] [class*=channelTextArea],
 
 [class*=statusItem] > div[class*=description],
 [class*=statusItem] > div[class*=status],
-[class*=statusItem] > div[class*=separator] {
+[class*=menu][class*=styleFixed] > div[class*=scroller] > div[class*=separator] {
     display: none;
 }
 
 [class*=clearStatusIcon] {
-    margin-left: -9px;
+    margin-left: 0;
 }
 
 nav[class*=guilds] ul[class*=tree] {
-    height: 90%;
+    height: 80%;
 }
 
 [class*=container] > [class*=flex][style="flex: 0 1 auto;"] {
@@ -605,11 +601,12 @@ nav[class*=guilds] ul[class*=tree] {
     flex-direction: column;
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 39px;
     padding: 20px;
     pointer-events: visible;
 }
 
+div[class*=customStatusItem] > span[class*=customText],
 section[class*=panels] > div[class*=container] > div[class*=nameTag] {
     display: none;
 }
@@ -617,6 +614,17 @@ section[class*=panels] > div[class*=container] > div[class*=nameTag] {
 section[class*=panels] > div[class*=container] {
     background-color: var(--background-secondary);
     height: 0;
+}
+
+[class*=animatorTop] > [class*=styleFixed] > div[class*=scroller] {
+    display:flex;
+    flex-direction:row;
+}
+
+[class*=animatorTop] > [class*=styleFixed] > div[class*=scroller] > [class*=item] > [class*=statusItem] {
+    grid-template-columns: none;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 /* END SECTION: User Thingy on bottom left */
