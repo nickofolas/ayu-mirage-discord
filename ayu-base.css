@@ -247,6 +247,11 @@ div[class*=toolbar] > div[class*=search] {
     order: 1;
 }
 
+/* Mentions */
+[class*=message][class*=mentioned]::before {
+    background-color: var(--ayu-notification-colour);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */

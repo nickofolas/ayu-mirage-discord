@@ -34,6 +34,9 @@
     --header-primary: white;
     --header-secondary: #c9c9c9;
 
+    --background-mentioned: #a29bfe1c;
+    --background-mentioned-hover: #a29bfe31;
+
     /* Ayu theme-specific vars */
     --ayu-positive: #a6cc70;
     --ayu-negative: #f27983;
