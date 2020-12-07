@@ -229,6 +229,24 @@ img[class*=replyAvatar] {
     padding: 1.5px;
 }
 
+/* Top Bar Stuff */
+div[class*=chat] > [class*=content]::before,
+nav[class*=container] > div[class*=container][class*=clickable] > header[class*=header] {
+    box-shadow: none;
+}
+
+div[class*=chat] > section[class*=container][class*=themed] {
+    background-color: var(--background-secondary);
+}
+
+div[class*=toolbar] > a[class*=anchor] {
+    display: none;
+}
+
+div[class*=toolbar] > div[class*=search] {
+    order: 1;
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
