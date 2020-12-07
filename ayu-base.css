@@ -570,7 +570,7 @@ div[class*=sidebar] > section[class*=panels] > [class*=container] > [class*=avat
     left: 325px;
 }
 
-[class*=channelTextArea],
+form[class*=form] [class*=channelTextArea],
 [class*=jumpToPresentBar] {
     width: auto;
     margin-left: 55px;
