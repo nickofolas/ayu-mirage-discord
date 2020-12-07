@@ -545,24 +545,16 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     padding: 4px;
 }
 
-[class*=panels] > [class*=container] > [class*=avatarWrapper] { 
+div[class*=sidebar] > section[class*=panels] > [class*=container] > [class*=avatarWrapper] { 
     position: fixed;
-    z-index: 5;
     bottom: 31px;
-    left: 325px;
-}
-
-[class*=container],
-[class*=applicationStore],
-[class*=pageWrapper],
-[class*=wrapper]:not([class*=guilds]) {
-    z-index: 6;
+    right: 255px;
 }
 
 [class*=channelTextArea],
 [class*=jumpToPresentBar] {
     width: auto;
-    margin-left: 55px;
+    margin-right: 55px;
 }
 
 [class*=animatorTop] > [class*=styleFixed] {
@@ -582,7 +574,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 }
 
 [class*=clearStatusIcon] {
-    margin-left: -8px;
+    margin-left: -9px;
 }
 
 nav[class*=guilds] ul[class*=tree] {
