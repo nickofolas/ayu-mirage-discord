@@ -548,6 +548,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 div[class*=sidebar] > section[class*=panels] > [class*=container] > [class*=avatarWrapper] { 
     position: fixed;
     bottom: 31px;
+    z-index: 1;
     right: 255px;
 }
 
