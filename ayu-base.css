@@ -593,7 +593,7 @@ div[class*=sidebar] > section[class*=panels] > [class*=container] > [class*=avat
 }
 
 nav[class*=guilds] ul[class*=tree] {
-    height: 80%;
+    height: calc(100% - 160px);
 }
 
 [class*=container] > [class*=flex][style="flex: 0 1 auto;"] {
