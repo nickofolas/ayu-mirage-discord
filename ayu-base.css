@@ -549,13 +549,13 @@ div[class*=sidebar] > section[class*=panels] > [class*=container] > [class*=avat
     position: fixed;
     bottom: 31px;
     z-index: 1;
-    right: 255px;
+    left: 325px;
 }
 
 [class*=channelTextArea],
 [class*=jumpToPresentBar] {
     width: auto;
-    margin-right: 55px;
+    margin-left: 55px;
 }
 
 [class*=animatorTop] > [class*=styleFixed] {
