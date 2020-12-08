@@ -329,11 +329,11 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     background-color: var(--background-floating) !important; 
 }
 
-[class*=rolesList] > [class*=role] {
+[class*="userPopout"] [class*=rolesList] > [class*=role] {
     border-radius: 2.5px;
 }
 
-[class*=rolesList] > [class*=role]:not(button) {
+[class*="userPopout"] [class*=rolesList] > [class*=role]:not(button) {
     border-radius: 2.5px;
     position: relative;
     overflow: hidden;
@@ -341,13 +341,13 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     padding: 0;
 }
 
-[class*=roleCircle] {
+[class*="userPopout"] [class*=roleCircle] {
     border-radius: 0;
     padding: 0 0 10px 0;
     width: 6px;
 }
 
-[class*=roleCircle]::before {
+[class*="userPopout"] [class*=roleCircle]::before {
     background: inherit;
     position: absolute;
     content: "";
@@ -359,15 +359,15 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     z-index: -1;
 }
 
-[class*=rolesList] > [class*=role]:not(button):hover {
+[class*="userPopout"] [class*=rolesList] > [class*=role]:not(button):hover {
     border-color: var(--ayu-negative)!important;
 }
 
-[class*=rolesList] > [class*=role]:not(button):hover [class*=roleCircle] {
+[class*="userPopout"] [class*=rolesList] > [class*=role]:not(button):hover [class*=roleCircle] {
     background-color: var(--ayu-negative)!important;
 }
 
-[class*=rolesList] > [class*=role]:not(button):hover [class*=roleRemoveIcon] {
+[class*="userPopout"] [class*=rolesList] > [class*=role]:not(button):hover [class*=roleRemoveIcon] {
     width: 100%;
     height: 100%;
     top: 0;
