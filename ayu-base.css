@@ -611,7 +611,8 @@ nav[class*=guilds] ul[class*=tree] {
     pointer-events: visible;
 }
 
-div[class*=customStatusItem] > span[class*=customText],
+div[class^=customStatus] > span[class*=customText],
+div[class^=customStatus] > img[class*=customEmoji],
 section[class*=panels] > div[class*=container] > div[class*=nameTag] {
     display: none;
 }
@@ -624,6 +625,10 @@ section[class*=panels] > div[class*=container] {
 [class*=animatorTop] > [class*=styleFixed] > div[class*=scroller] {
     display:flex;
     flex-direction:row;
+}
+
+div[class^=customStatus][class*=statusItem] {
+    grid-template-columns: none;
 }
 
 [class*=animatorTop] > [class*=styleFixed] > div[class*=scroller] > [class*=item] > [class*=statusItem] {
