@@ -252,6 +252,11 @@ div[class*=toolbar] > div[class*=search] {
     background-color: var(--ayu-notification-colour);
 }
 
+/* Slash Command Headers */
+div[class*=categoryHeader] {
+    background-color: var(--background-secondary);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
