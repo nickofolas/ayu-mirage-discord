@@ -426,7 +426,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 [class*="topSectionSpotify"] { background-color: var(--ayu-positive); }
 
 
-[class*=headerFill] [class*=activityProfile][class*=activity] {
+[class*=activityProfile][class*=activity] {
     border-radius: var(--ayu-border-radius);
     margin: 8px 20px 10px 20px;
 }
