@@ -257,6 +257,19 @@ div[class*=categoryHeader] {
     background-color: var(--background-secondary);
 }
 
+/* Calendar picker for search */
+div[class*=react-datepicker] {
+    background-color: var(--background-floating);
+}
+
+div[class*=react-datepicker__header] {
+    background-color: var(--background-floating) !important;
+}
+
+div[class^=react-datepicker__day--] {
+    background-color: var(--background-accent);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
