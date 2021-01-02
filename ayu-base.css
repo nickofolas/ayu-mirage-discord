@@ -263,7 +263,8 @@ div[class*=react-datepicker] {
 }
 
 /* Nitro Gifts Tile */
-div[class*=giftCodeContainer] > div[class*=tile] {
+div[class*=giftCodeContainer] > div[class*=tile],
+div[class*=giftCodeContainer] > div[class*=tile]:hover {
     background-color: var(--background-tertiary);
 }
 
