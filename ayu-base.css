@@ -262,6 +262,11 @@ div[class*=react-datepicker] {
     background-color: var(--background-floating) !important;
 }
 
+/* Nitro Gifts Tile */
+div[class*=giftCodeContainer] > div[class*=tile] {
+    background-color: var(--background-tertiary);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
