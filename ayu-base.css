@@ -268,6 +268,11 @@ div[class*=giftCodeContainer] > div[class*=tile]:hover {
     background-color: var(--background-tertiary);
 }
 
+/* Oh my god I hate the call button in the context menu nobody likes it */
+[id*=user-context-call] {
+    display: none;
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
