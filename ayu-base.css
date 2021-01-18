@@ -273,6 +273,11 @@ div[class*=giftCodeContainer] > div[class*=tile]:hover {
     display: none;
 }
 
+/* Fix checkbox background color */
+label[class*=checkboxWrapper][class*=checked] {
+    background-color: var(--background-secondary)!important;
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
