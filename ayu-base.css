@@ -519,7 +519,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     background-color: var(--background-secondary);
 }
 
-[role="dialog"] [class*="message"] {
+[role="dialog"] [class*="message"]:not([class^=replied]) {
     background-color: var(--background-primary) !important;
 }
 
