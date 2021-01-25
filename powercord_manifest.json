@@ -1,0 +1,8 @@
+{
+    "name": "Ayu-Mirage",
+    "description": "A Discord theme using the Ayu Mirage color palette",
+    "version": "1.0.0",
+    "author": "nickofolas",
+    "license": "MIT",
+    "theme": "./import.css"
+}

@@ -87,8 +87,6 @@ Changes border radius-es on things like avatars, server icons
 .theme-dark [role="img"][aria-label]::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border-radius: var(--ayu-border-radius);
@@ -96,27 +94,166 @@ Changes border radius-es on things like avatars, server icons
 }
 
 /* Statuses as shadows */
+.theme-dark [role="img"][aria-label*="Online"]::before,
+.theme-dark [role="img"][aria-label*="Conectado"]::before,
+.theme-dark [role="img"][aria-label*="En ligne"]::before,
+.theme-dark [role="img"][aria-label*="Na mreži"]::before,
+.theme-dark [role="img"][aria-label*="Prisijungęs"]::before,
+.theme-dark [role="img"][aria-label*="Elérhető"]::before,
+.theme-dark [role="img"][aria-label*="Pålogget"]::before,
+.theme-dark [role="img"][aria-label*="Dostępny"]::before,
+.theme-dark [role="img"][aria-label*="Disponível"]::before,
+.theme-dark [role="img"][aria-label*="Paikalla"]::before,
+.theme-dark [role="img"][aria-label*="Trực tuyến"]::before,
+.theme-dark [role="img"][aria-label*="Çevrimiçi"]::before,
+.theme-dark [role="img"][aria-label*="Συνδεδεμένος"]::before,
+.theme-dark [role="img"][aria-label*="На линия"]::before,
+.theme-dark [role="img"][aria-label*="В сети"]::before,
+.theme-dark [role="img"][aria-label*="В мережі"]::before,
+.theme-dark [role="img"][aria-label*="ออนไลน์"]::before,
+.theme-dark [role="img"][aria-label*="在线"]::before,
 .theme-dark [role="img"][aria-label*="オンライン"]::before,
-.theme-dark [role="img"][aria-label*="Online"]::before {
+.theme-dark [role="img"][aria-label*="線上"]::before,
+.theme-dark [role="img"][aria-label*="온라인"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-online);
 }
+
+.theme-dark [role="img"][aria-label*="Do Not Disturb"]::before,
+.theme-dark [role="img"][aria-label*="Vil ikke forstyrres"]::before,
+.theme-dark [role="img"][aria-label*="Bitte nicht stören"]::before,
+.theme-dark [role="img"][aria-label*="No molestar"]::before,
+.theme-dark [role="img"][aria-label*="Ne pas déranger"]::before,
+.theme-dark [role="img"][aria-label*="Ne uznemiravaj"]::before,
+.theme-dark [role="img"][aria-label*="Non disturbare"]::before,
+.theme-dark [role="img"][aria-label*="Netrukdyti"]::before,
+.theme-dark [role="img"][aria-label*="Niet storen"]::before,
+.theme-dark [role="img"][aria-label*="Ikke forstyrr"]::before,
+.theme-dark [role="img"][aria-label*="Nie przeszkadzać"]::before,
+.theme-dark [role="img"][aria-label*="Elfoglalt"]::before,
+.theme-dark [role="img"][aria-label*="Não perturbar"]::before,
+.theme-dark [role="img"][aria-label*="Nu deranja"]::before,
+.theme-dark [role="img"][aria-label*="Älä häiritse"]::before,
+.theme-dark [role="img"][aria-label*="Stör ej"]::before,
+.theme-dark [role="img"][aria-label*="Vui Lòng Không Làm Phiền"]::before,
+.theme-dark [role="img"][aria-label*="Rahatsız Etmeyin"]::before,
+.theme-dark [role="img"][aria-label*="Nerušit"]::before,
+.theme-dark [role="img"][aria-label*="Μην ενοχλείτε"]::before,
+.theme-dark [role="img"][aria-label*="Не ме безпокой"]::before,
+.theme-dark [role="img"][aria-label*="Не беспокоить"]::before,
+.theme-dark [role="img"][aria-label*="Не турбувати"]::before,
+.theme-dark [role="img"][aria-label*="ห้ามรบกวน"]::before,
+.theme-dark [role="img"][aria-label*="请勿打扰"]::before,
 .theme-dark [role="img"][aria-label*="取り込み中"]::before,
-.theme-dark [role="img"][aria-label*="Do Not Disturb"]::before {
+.theme-dark [role="img"][aria-label*="請勿打擾"]::before,
+.theme-dark [role="img"][aria-label*="다른 용무 중"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-dnd);
 }
+
+.theme-dark [role="img"][aria-label*="Idle"]::before,
+.theme-dark [role="img"][aria-label*="Inaktiv"]::before,
+.theme-dark [role="img"][aria-label*="Abwesend"]::before,
+.theme-dark [role="img"][aria-label*="Ausente"]::before,
+.theme-dark [role="img"][aria-label*="Inactif"]::before,
+.theme-dark [role="img"][aria-label*="U mirovanju"]::before,
+.theme-dark [role="img"][aria-label*="Inattivo"]::before,
+.theme-dark [role="img"][aria-label*="Pasitraukęs"]::before,
+.theme-dark [role="img"][aria-label*="Tétlen"]::before,
+.theme-dark [role="img"][aria-label*="Inactief"]::before,
+.theme-dark [role="img"][aria-label*="Zaraz wracam"]::before,
+.theme-dark [role="img"][aria-label*="Inactiv"]::before,
+.theme-dark [role="img"][aria-label*="Toimeton"]::before,
+.theme-dark [role="img"][aria-label*="Chờ"]::before,
+.theme-dark [role="img"][aria-label*="Boşta"]::before,
+.theme-dark [role="img"][aria-label*="Nečinný"]::before,
+.theme-dark [role="img"][aria-label*="Αδρανής"]::before,
+.theme-dark [role="img"][aria-label*="Не се използва"]::before,
+.theme-dark [role="img"][aria-label*="Не активен"]::before,
+.theme-dark [role="img"][aria-label*="Відійшов"]::before,
+.theme-dark [role="img"][aria-label*="ไม่อยู่"]::before,
+.theme-dark [role="img"][aria-label*="闲置"]::before,
 .theme-dark [role="img"][aria-label*="退席中"]::before,
-.theme-dark [role="img"][aria-label*="Idle"]::before {
+.theme-dark [role="img"][aria-label*="閒置"]::before,
+.theme-dark [role="img"][aria-label*="자리비움"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-idle);
 }
+
+.theme-dark [role="img"][aria-label*="Streaming"]::before,
+.theme-dark [role="img"][aria-label*="Streamer"]::before,
+.theme-dark [role="img"][aria-label*="Transmitiendo"]::before,
+.theme-dark [role="img"][aria-label*="En direct"]::before,
+.theme-dark [role="img"][aria-label*="In diretta"]::before,
+.theme-dark [role="img"][aria-label*="Transliuojama"]::before,
+.theme-dark [role="img"][aria-label*="Közvetítés"]::before,
+.theme-dark [role="img"][aria-label*="Streamt"]::before,
+.theme-dark [role="img"][aria-label*="Strømmer"]::before,
+.theme-dark [role="img"][aria-label*="Streamowanie"]::before,
+.theme-dark [role="img"][aria-label*="Transmitindo"]::before,
+.theme-dark [role="img"][aria-label*="Transmite live"]::before,
+.theme-dark [role="img"][aria-label*="Striimaa"]::before,
+.theme-dark [role="img"][aria-label*="Streamar"]::before,
+.theme-dark [role="img"][aria-label*="Đang stream"]::before,
+.theme-dark [role="img"][aria-label*="Yayın Yapıyor"]::before,
+.theme-dark [role="img"][aria-label*="Streamuje"]::before,
+.theme-dark [role="img"][aria-label*="Ζωντανά"]::before,
+.theme-dark [role="img"][aria-label*="Стрийминг"]::before,
+.theme-dark [role="img"][aria-label*="Стримит"]::before,
+.theme-dark [role="img"][aria-label*="Трансляція"]::before,
+.theme-dark [role="img"][aria-label*="ถ่ายทอดสด"]::before,
+.theme-dark [role="img"][aria-label*="正在直播"]::before,
 .theme-dark [role="img"][aria-label*="配信"]::before,
-.theme-dark [role="img"][aria-label*="Streaming"]::before {
+.theme-dark [role="img"][aria-label*="直播中"]::before,
+.theme-dark [role="img"][aria-label*="配信"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-streaming);
 }
 
-.theme-dark [role="img"][aria-label*="オフライン"]::before,
-.theme-dark [role="img"][aria-label*="オンライン状態を隠す"]::before,
 .theme-dark [role="img"][aria-label*="Offline"]::before,
-.theme-dark [role="img"][aria-label*="Invisible"]::before {
+.theme-dark [role="img"][aria-label*="Hors ligne"]::before,
+.theme-dark [role="img"][aria-label*="Nem elérhető"]::before,
+.theme-dark [role="img"][aria-label*="Neprisijungęs"]::before,
+.theme-dark [role="img"][aria-label*="Niedostępny"]::before,
+.theme-dark [role="img"][aria-label*="Izvan mreže"]::before,
+.theme-dark [role="img"][aria-label*="오프라인"]::before,
+.theme-dark [role="img"][aria-label*="離線"]::before,
+.theme-dark [role="img"][aria-label*="オフライン"]::before,
+.theme-dark [role="img"][aria-label*="离线"]::before,
+.theme-dark [role="img"][aria-label*="ออฟไลน์"]::before,
+.theme-dark [role="img"][aria-label*="Не в мережі"]::before,
+.theme-dark [role="img"][aria-label*="Не в сети"]::before,
+.theme-dark [role="img"][aria-label*="Извън линия"]::before,
+.theme-dark [role="img"][aria-label*="Αποσυνδεδεμένος"]::before,
+.theme-dark [role="img"][aria-label*="Çevrimdışı"]::before,
+.theme-dark [role="img"][aria-label*="Ngoại tuyến"]::before,
+.theme-dark [role="img"][aria-label*="Ei paikalla"]::before,
+.theme-dark [role="img"][aria-label*="Frakoblet"]::before,
+.theme-dark [role="img"][aria-label*="Desconectado"]::before,
+.theme-dark [role="img"][aria-label*="Invisible"]::before,
+.theme-dark [role="img"][aria-label*="Usynlig"]::before,
+.theme-dark [role="img"][aria-label*="Unsichtbar"]::before,
+.theme-dark [role="img"][aria-label*="Nevidljiv/a"]::before,
+.theme-dark [role="img"][aria-label*="Nematomas"]::before,
+.theme-dark [role="img"][aria-label*="Izvan mreže"]::before,
+.theme-dark [role="img"][aria-label*="Nevidljiv/a"]::before,
+.theme-dark [role="img"][aria-label*="Nematomas"]::before,
+.theme-dark [role="img"][aria-label*="Láthatatlan"]::before,
+.theme-dark [role="img"][aria-label*="Onzichtbaar"]::before,
+.theme-dark [role="img"][aria-label*="Usynlig"]::before,
+.theme-dark [role="img"][aria-label*="Niewidoczny"]::before,
+.theme-dark [role="img"][aria-label*="Invisível"]::before,
+.theme-dark [role="img"][aria-label*="Invizibil"]::before,
+.theme-dark [role="img"][aria-label*="Näkymätön"]::before,
+.theme-dark [role="img"][aria-label*="Osynlig"]::before,
+.theme-dark [role="img"][aria-label*="Vô hình"]::before,
+.theme-dark [role="img"][aria-label*="Görünmez"]::before,
+.theme-dark [role="img"][aria-label*="Neviditelný"]::before,
+.theme-dark [role="img"][aria-label*="Αόρατος"]::before,
+.theme-dark [role="img"][aria-label*="Невидим"]::before,
+.theme-dark [role="img"][aria-label*="Невидимый"]::before,
+.theme-dark [role="img"][aria-label*="Невидимий"]::before,
+.theme-dark [role="img"][aria-label*="ไม่ระบุ"]::before,
+.theme-dark [role="img"][aria-label*="隐身"]::before,
+.theme-dark [role="img"][aria-label*="オンライン状態を隠す"]::before,
+.theme-dark [role="img"][aria-label*="隱形"]::before,
+.theme-dark [role="img"][aria-label*="오프라인 표시"]::before {
     box-shadow: inset 0 0 0 1.5px var(--ayu-status-offline);
 }
 
