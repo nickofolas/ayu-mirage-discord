@@ -283,6 +283,11 @@ label[class*=checkboxWrapper][class*=checked] {
     background-color: var(--background-secondary) !important;
 }
 
+/* VC video loading background */
+[class*=videoWrapper] {
+    background-color: var(--background-accent);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
@@ -322,6 +327,10 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 [class*="notificationSettings"] label:not([class*="disabled"]):hover,
 [class*="notificationSettings"] label[class*="selected"] { 
     background-color: var(--ayu-default) !important; 
+}
+
+[class*=streamPreview] > button[class*=cta] {
+    background-color: var(--background-accent);
 }
 
 /* END SECTION: Buttons */
