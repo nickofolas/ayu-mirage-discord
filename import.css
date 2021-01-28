@@ -82,8 +82,11 @@
 
     --ayu-icon-badge-radius: 4.5px;
 
-    --scrollbar-auto-thumb: var(--background-secondary);
-    --scrollbar-auto-track: var(--background-primary);
+    --scrollbar-auto-thumb: var(--background-secondary-alt);
+    --scrollbar-auto-track: transparent;
+
+    --scrollbar-thin-thumb: var(--background-secondary-alt);
+    --scrollbar-thin-track: transparent;
 
     --ayu-notification-colour: #a29bfe;
 }
