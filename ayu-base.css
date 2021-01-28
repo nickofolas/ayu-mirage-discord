@@ -649,7 +649,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 /* SECTION: Emoji and mention suggestions */
 
-[class*="autocomplete"] {
+[class*="autocompleteInner"] {
     background-color: var(--background-floating) !important;
 }
 [class*="autocomplete"] [class*="selected"] {
