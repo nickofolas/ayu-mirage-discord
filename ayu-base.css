@@ -494,15 +494,15 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 }
 
 [class*=tabBar][role=tabbar] {
-	justify-content: center;
-	height: 40px;
+    justify-content: center;
+    height: 40px;
 }
 
 [class*=tabBar][role=tabbar] [class*=tabBarItem] {
-	margin: 0;
-	padding: 0 15px;
-	border-bottom: none;
-	border-radius: var(--ayu-border-radius);
+    margin: 0;
+    padding: 0 15px;
+    border-bottom: none;
+    border-radius: var(--ayu-border-radius);
 }
 
 [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-selected=true] {
@@ -510,19 +510,19 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 }
 
 [class*=listScroller] {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 10px;
-	align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-content: flex-start;
 }
 
 [class*=listRow][role=button] {
-	width: 48%;
-	height: 50px;
-	margin-bottom: 10px;
-	box-sizing: border-box;
-	background-color: var(--background-secondary-alt);
-	border-radius: var(--ayu-border-radius);
+    width: 48%;
+    height: 50px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--ayu-border-radius);
 }
 
 [class*=listRow][role=button]:hover {
