@@ -493,6 +493,70 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     border: none;
 }
 
+[class*=tabBar][role=tabbar] {
+	justify-content: center;
+	height: 40px;
+}
+
+[class*=tabBar][role=tabbar] [class*=tabBarItem] {
+	margin: 0;
+	padding: 0 15px;
+	border-bottom: none;
+	border-radius: var(--ayu-border-radius);
+}
+
+[class*=tabBar][role=tabbar] [class*=tabBarItem][aria-selected=true] {
+    background-color: var(--background-secondary-alt);
+}
+
+[class*=listScroller] {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	align-content: flex-start;
+}
+
+[class*=listRow][role=button] {
+	width: 48%;
+	height: 50px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	background-color: var(--background-secondary-alt);
+	border-radius: var(--ayu-border-radius);
+}
+
+[class*=listRow][role=button]:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+[class*=userInfoSection] {
+    border: none !important;
+}
+
+[class*=note] textarea {
+    background-color: var(--background-tertiary);
+    border-radius: var(--ayu-border-radius);
+    padding: 10px;
+}
+
+[class*=connectedAccounts] {
+    margin-top: -40px;
+}
+
+[class*=connectedAccounts] [class*=connectedAccount]:not([class*=connectedAccountName]) {
+    border: none;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--ayu-border-radius);
+}
+
+[class*=additionalActionsIcon] {
+    height: 32px;
+    width: 32px;
+    background-color: var(--background-accent);
+    border-radius: 3px;
+    transform: rotate(90deg);
+}
+
 /* END SECTION: Large user popouts */
 
 /* SECTION: Friends list */
