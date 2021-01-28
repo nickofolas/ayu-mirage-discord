@@ -491,10 +491,12 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 [class*=tabBarContainer] {
     border: none;
+    padding-bottom: 5px;
 }
 
 [class*=tabBar][role=tabbar] {
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 600px;
     height: 40px;
 }
 
