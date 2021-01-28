@@ -549,6 +549,10 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     border-radius: var(--ayu-border-radius);
 }
 
+[class*=flowerStar] > path {
+    fill: var(--background-accent)!important;
+}
+
 [class*=additionalActionsIcon] {
     height: 32px;
     width: 32px;
