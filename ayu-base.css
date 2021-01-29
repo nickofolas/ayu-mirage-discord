@@ -572,7 +572,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 [class*="itemCard"][class*="interactive"]:hover,
 [class*="itemCard"][class*="interactive"] [class*="inset"] section[class*="section"] { 
-    background-color: var(--background-tertiary); 
+    background-color: var(--background-tertiary) !important; 
 }
 
 [role="dialog"] > [class*="popout"] > [style] { 
