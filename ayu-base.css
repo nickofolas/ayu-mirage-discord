@@ -165,8 +165,18 @@ input[class*="emojiInput"] {
 [id*="search-results"][class*="container"] {
     background-color: var(--background-floating) !important;
 }
+
 [id*="search-results"][class*="option"]::after {
     background: none !important;
+}
+
+[id*=search-results][class*=option][class*=selected] {
+    background-color: var(--background-secondary);
+}
+
+[class*=searchFilter],
+[class*=searchAnswer] {
+    background-color: var(--background-accent) !important;
 }
 
 /* Stream controls and stuff */
