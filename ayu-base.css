@@ -306,8 +306,10 @@ div[class*="barFill"] {
      background-color: var(--background-accent) !important; 
 }
 
-button[class*="lookFilled"][class*="colorGreen"] {
-    background-color: var(--ayu-button-positive) !important; 
+button[class*="lookFilled"][class*="colorGreen"],
+button[class*="lookInverted"][class*="colorGreen"]  {
+    background-color: var(--ayu-button-positive) !important;
+    color: white; 
 }
 
 button[class*="lookFilled"][class*="colorRed"] { 
