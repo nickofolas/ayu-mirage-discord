@@ -763,3 +763,10 @@ div[class^=customStatus][class*=statusItem] {
 }
 
 /* END SECTION: User Thingy on bottom left */
+
+/*  START SECTION: settings menu for users */
+input[class=input-cIJ7To]:focus {
+    border-color: var(--ayu-notification-colour) !important;
+}
+
+/* END SECTION: settings menu for users */
