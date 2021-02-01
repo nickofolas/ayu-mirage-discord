@@ -37,6 +37,10 @@
     --background-mentioned: #a29bfe1c;
     --background-mentioned-hover: #a29bfe31;
 
+    --background-modifier-hover: #33415e2d;
+    --background-modifier-active: #33415e49;
+    --background-modifier-selected: #33415e5d;
+
     /* Ayu theme-specific vars */
     --ayu-positive: #a6cc70;
     --ayu-negative: #f27983;

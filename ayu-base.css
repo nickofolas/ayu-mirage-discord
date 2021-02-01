@@ -293,6 +293,24 @@ div[class*=giftCodeContainer] > div[class*=tile]:hover {
     background-color: var(--background-accent);
 }
 
+/* Spoilered stuff */
+[class*=spoilerText][class*=hidden] {
+    background-color: var(--background-tertiary) !important;
+}
+
+[class*=spoilerText]:not([class*=hidden]) {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+/* Reactions on messages */
+[class*=reactions][role=group] [class*=reaction] {
+    background-color: var(--background-modifier-hover);
+}
+
+[class*=reactions][role=group] [class*=reaction][class*=reactionMe] {
+    background-color: var(--background-accent);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
