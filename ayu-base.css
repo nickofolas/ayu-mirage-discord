@@ -316,8 +316,7 @@ div[class*="barFill"] {
      background-color: var(--background-accent) !important; 
 }
 
-button[class*="lookFilled"][class*="colorGreen"],
-button[class*="lookInverted"][class*="colorGreen"]  {
+button[class*="lookFilled"][class*="colorGreen"]  {
     background-color: var(--ayu-button-positive) !important;
     color: white; 
 }
@@ -627,7 +626,7 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
     border-color: var(--background-secondary-alt);
 }
 
-[role="dialog"] [class*="modal"] [class*="thin"][class*="scroller"] {
+[role="dialog"] > div > [class*="thin"][class*="scroller"] {
     background-color: var(--background-secondary);
 }
 
