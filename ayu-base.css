@@ -782,7 +782,8 @@ div[class^=customStatus][class*=statusItem] {
 
 /* SECTION: Overrides of SVG fills and such */
 
-rect[mask="url(#svg-mask-status-online)"] {
+rect[mask="url(#svg-mask-status-online)"],
+rect[mask="url(#svg-mask-status-online-mobile)"] {
     fill: #43b581!important;
 }
 
