@@ -334,9 +334,15 @@ div[class*="barFill"] {
      background-color: var(--background-accent) !important; 
 }
 
-button[class*="lookFilled"][class*="colorGreen"]  {
+button[class*="lookFilled"][class*="colorGreen"],
+button[class*="lookInverted"][class*="colorGreen"]  {
     background-color: var(--ayu-button-positive) !important;
     color: white; 
+}
+
+button[class*="lookInverted"][class*="colorBrand"] { 
+    background-color: var(--ayu-button-default) !important; 
+    color: white;
 }
 
 button[class*="lookFilled"][class*="colorRed"] { 
@@ -798,5 +804,87 @@ rect[mask="url(#svg-mask-status-streaming)"] {
 rect[mask="url(#svg-mask-status-idle)"] {
     fill: #faa61a!important;
 } /* This makes it so status indicators are always colored */
+
+/* Begin: Override colors of badges when there's a status */
+[class*=profileBadgeStaff] {
+    background-image: url(https://discordapp.com/assets/4358ad1fb423b346324516453750f569.svg) !important;
+}
+
+[class*=profileBadgePartner] {
+    background-image: url(https://discord.com/assets/6203964d9d25c394a573fd4f6be36d97.svg) !important;
+}
+
+[class*=profileBadgeEarlySupporter] {
+    background-image: url(https://discordapp.com/assets/23e59d799436a73c024819f84ea0b627.svg) !important;
+}
+
+[class*=profileBadgeBugHunterLevel1] {
+    background-image: url(https://discordapp.com/assets/f61b8981e92feead854f52e5a1ba14f0.svg) !important;
+}
+
+[class*=profileBadgeBugHunterLevel2] {
+    background-image: url(https://discordapp.com/assets/9286332d6e947c91fa91569efce431b0.svg) !important;
+}
+
+[class*=profileBadgeHypesquad] {
+    background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
+}
+
+[class*=profileBadgeHypeSquadOnlineHouse1] {
+    background-image: url(https://discordapp.com/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg) !important;
+}
+
+[class*=profileBadgeHypeSquadOnlineHouse2] {
+    background-image: url(https://discordapp.com/assets/48cf0556d93901c8cb16317be2436523.svg) !important;
+}
+
+[class*=profileBadgeHypeSquadOnlineHouse3] {
+    background-image: url(https://discordapp.com/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg) !important;
+}
+
+[class*=profileBadgePremium] {
+    background-image: url(https://discord.com/assets/386884eecd36164487505ddfbac35a9d.svg) !important;
+}
+
+[class*=profileBadgeVerifiedDeveloper] {
+    background-image: url(https://discordapp.com/assets/45cd06af582dcd3c6b79370b4e3630de.svg) !important;
+}
+
+[class*=profileGuildSubscriberlvl1] {
+    background-image: url(https://discordapp.com/assets/fbb6f1e160280f0e9aeb5d7c452eefe1.svg) !important;
+}
+
+[class*=profileGuildSubscriberlvl2] {
+    background-image: url(https://discordapp.com/assets/b4b741bef6c3de9b29e2e0653e294620.svg) !important;
+}
+
+[class*=profileGuildSubscriberlvl3] {
+    background-image: url(https://discordapp.com/assets/93f5a393e22796a850931483166d7cb9.svg) !important;
+}
+
+[class*=profileGuildSubscriberlvl4] {
+    background-image: url(https://discordapp.com/assets/4c380650960c2b1e1584115d5e9ad63b.svg) !important;
+}
+
+[class*=profileGuildSubscriberlvl5] {
+    background-image: url(https://discordapp.com/assets/438dd7ecbffcf21b6cbf2773ade51a04.svg) !important;
+}
+
+[class*=profileGuildSubscriberlvl6] {
+    background-image: url(https://discordapp.com/assets/7a5f78de816fcecbbd1d5d6e635cc7dd.svg) !important;
+}
+
+[class*=profileGuildSubscriberlvl7] {
+    background-image: url(https://discordapp.com/assets/5a24b20b84fb3eafc138916729386e76.svg) !important;
+}
+
+[class*=profileGuildSubscriberlvl8] {
+    background-image: url(https://discordapp.com/assets/f31d590e1f3629cd0b614330f4a8ee2a.svg) !important;
+}
+
+[class*=profileGuildSubscriberlvl9] {
+    background-image: url(https://discordapp.com/assets/9ba64f1fa91ccde0eba506c1c33f3d1a.svg) !important;
+}
+/* End: Override colors of badges when there's a status */
 
 /* END SECTION: Overrides of SVG fills and such */
