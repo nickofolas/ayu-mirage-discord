@@ -145,10 +145,10 @@ input[class*="emojiInput"] {
 }
 
 /* Roles adding menu */
-[role="dialog"][aria-label="Add Role"] [class*="header"] {
+[role="dialog"][aria-label^="Add Role"] [class*="header"] {
     background-color: var(--background-secondary) !important;
 }
-[role="dialog"][aria-label="Add Role"] [class*="sectionTag"] {
+[role="dialog"][aria-label^="Add Role"] [class*="sectionTag"] {
     background-color: var(--background-floating) !important;
 }
 
