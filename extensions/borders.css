@@ -27,10 +27,6 @@ Changes border radius-es on things like avatars, server icons
     --ayu-icon-badge-radius: 4.5px;
 }
 
-.theme-dark button {
-    border-radius: var(--ayu-border-radius) !important;
-}
-
 /* Embeds */
 .theme-dark [class*="embed"][class*="markup"] {
     border-left-width: 5px;
@@ -91,6 +87,11 @@ Changes border radius-es on things like avatars, server icons
     height: 100%;
     border-radius: var(--ayu-border-radius);
     z-index: 20;
+}
+
+/* Overlay for setting new avatar */
+div[class*=editingContainer] div[class*=overlay] {
+    border-radius: var(--ayu-border-radius);
 }
 
 /* Statuses as shadows */
