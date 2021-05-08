@@ -1,12 +1,12 @@
-@import url("https://reyola.github.io/ayu-mirage-discord/ayu-base.css");
+@import url("https://nickofolas.github.io/ayu-mirage-discord/ayu-base.css");
 
 /* Uncomment any of these lines to enable them */
 
 /* Border Radius-es (Square Icons etc) */
-/* @import url(https://reyola.github.io/ayu-mirage-discord/extensions/borders.css); */
+/* @import url(https://nickofolas.github.io/ayu-mirage-discord/extensions/borders.css); */
 
 /* Lurker Input Bar (Hides the input bar when you aren't hovering it to prevent accidentally triggering typing) */
-/* @import url(https://reyola.github.io/ayu-mirage-discord/extensions/lurker-input.css); */
+/* @import url(https://nickofolas.github.io/ayu-mirage-discord/extensions/lurker-input.css); */
 
 /* Declares variables used within the theme and all */
 .theme-light,
@@ -40,6 +40,8 @@
     --background-modifier-hover: #33415e2d;
     --background-modifier-active: #33415e49;
     --background-modifier-selected: #33415e5d;
+
+    --activity-card-background: var(--background-tertiary);
 
     /* Ayu theme-specific vars */
     --ayu-positive: #a6cc70;
