@@ -525,8 +525,6 @@ div[class*=topSection] [class*=tabBarContainer] {
 }
 
 div[class*=topSection] [class*=tabBar][role=tabbar] {
-    justify-content: space-evenly;
-    width: 600px;
     height: 40px;
 }
 
