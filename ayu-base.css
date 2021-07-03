@@ -638,7 +638,8 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
 [class*="tierBody"] {
     background-color: var(--background-floating) !important;
 }
-[class*="tierHeaderLocked"] {
+[class*="tierHeaderLocked"],
+[class*="tierHeaderUnlocked"] {
     background-color: var(--background-secondary) !important;
 }
 
